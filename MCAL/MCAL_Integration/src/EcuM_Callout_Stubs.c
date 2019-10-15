@@ -320,6 +320,7 @@ void EcuM_AL_DriverInitOne(const EcuM_ConfigType *ConfigPtr)
 
     /* Ignoring return value. IMPROVEMENT Handle return value. */
     (void) Mcu_DistributePllClock();
+    MCAL_IRQ_setup();
 #endif
 
 #if defined(USE_DEM)
