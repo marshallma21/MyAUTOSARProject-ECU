@@ -55,12 +55,7 @@ void IoHwAb_MainFunction( void )
                 /* Re-Init ADC */
                 Adc_StopGroupConversion(AdcGroup_0);
                 Adc_DeInit();
-#if defined(CFG_ZYNQ)
-                Adc_Init(Adc_GlobalConfig);
-#else
-
                 Adc_Init(&AdcConfigSet);
-#endif
                 IoHwAb_Init();
                 nofFailTry = 0;
             }
@@ -102,14 +97,3 @@ Std_ReturnType IoHwAb_Analog_Read(uint32 signal, sint32 *value, uint32 *status){
 }
 #endif
 
-#if defined(CFG_MPC5777M)
-#include "Pwm.h"
-void Pwm_Init(const Pwm_ConfigType* ConfigPtr) {
-}
-
-void Pwm_DeInit(void) {
-}
-
-void Pwm_SetDutyCycle(Pwm_ChannelType Channel, uint16 DutyCycle){
-}
-#endif

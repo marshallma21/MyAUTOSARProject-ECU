@@ -7,6 +7,8 @@
 #include "Can.h"
 #include "CanIf.h"
 
+extern void LightManager_Init(void);
+
 #define BSW_SERVICE_TASK_PERIOD	0.005
 
 #define CAN_MAIN_PERIOD		((uint32_t)(0.01 / BSW_SERVICE_TASK_PERIOD))
@@ -40,6 +42,14 @@ void Com_EnableIpduGroup( void ) {
 	CanIf_SetPduMode(0, CANIF_SET_ONLINE);
 }
 
+void SWC_Init( void ) {
+	LightManager_Init();
+	LEDActuator_Init();
+	PotSensor_Init();
+	SwtSensor_Init();
+	IntController_Init();
+}
+
 void OsIdle( void ) {
 	for(;;){
 
@@ -50,6 +60,7 @@ void OsStartupTask( void ) {
 	WDOG_disable();
 	EcuM_StartupTwo();
 	Com_EnableIpduGroup();
+	SWC_Init();
 	
 	(void)TerminateTask();
 }
