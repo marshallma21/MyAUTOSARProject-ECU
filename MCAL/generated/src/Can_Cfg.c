@@ -192,7 +192,7 @@ static CONST(CanStatic_ControllerBaudrateConfigType, CAN_CONST) ControllerBaudra
                     /* CTRL[SMP] - Sampling mode */
                     ((uint32)0<< FLEXCAN_CTRL_SMP_SHIFT_U8) |
                     /* CTRL[BOFF_REC] - Bus off recovery */
-                    ((uint32)1<< FLEXCAN_CTRL_BOFFREC_SHIFT_U8) |
+                    ((uint32)0<< FLEXCAN_CTRL_BOFFREC_SHIFT_U8) |
                     /* CTRL[LBUF] - Lowest Buffer Transmitted First */
                     ((uint32)1<< FLEXCAN_CTRL_LBUF_SHIFT_U8) |
                     /* CTRL[LOM] - Listen only mode */

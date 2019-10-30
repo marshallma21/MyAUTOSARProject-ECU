@@ -55,12 +55,12 @@ Std_ReturnType Rte_Read_LightManager_LightManagerInstance_BtnPressed_status(/*OU
 
 /** ------ IntReq */
 /*lint -e621 MISRA:OTHER:Ignore misidentified symbol clash [MISRA 2012 Rule 5.5, required]*/
-Std_ReturnType Rte_Read_LightManager_LightManagerInstance_IntReq_message(/*OUT*/IntImpl * value) { /*lint -e818 AOUTOSAR API SWS_Rte_01091 */
+Std_ReturnType Rte_Read_LightManager_LightManagerInstance_IntReq_message(/*OUT*/IntImpl * value) {
     Std_ReturnType retVal = RTE_E_OK;
 
-    /* --- Unconnected */
+    /* --- Receiver (ISignalIntReq) @req SWS_Rte_04505, @req SWS_Rte_06023 */
 
-    retVal = RTE_E_UNCONNECTED;
+    retVal |= Com_ReceiveSignal(ComConf_ComSignal_IntReq, value);
 
     return retVal;
 }
@@ -70,7 +70,12 @@ Std_ReturnType Rte_Read_LightManager_LightManagerInstance_IntReq_message(/*OUT*/
 Std_ReturnType Rte_Write_LightManager_LightManagerInstance_LEDSts_message(/*IN*/IntImpl value) {
     Std_ReturnType retVal = RTE_E_OK;
 
-    /* --- Unconnected */
+    {
+        /* --- Sender (ISignalLEDSts) @req SWS_Rte_04505, @req SWS_Rte_06023 */
+
+        retVal |= Com_SendSignal(ComConf_ComSignal_LEDSts, &value);
+
+    }
 
     return retVal;
 }

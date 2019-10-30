@@ -39,7 +39,12 @@ Std_ReturnType Rte_Call_PotSensor_PotSensorInstance_POTSignal_Read(/*OUT*/Analog
 Std_ReturnType Rte_Write_PotSensor_PotSensorInstance_POTSts_message(/*IN*/IntImpl value) {
     Std_ReturnType retVal = RTE_E_OK;
 
-    /* --- Unconnected */
+    {
+        /* --- Sender (ISignalPotValue) @req SWS_Rte_04505, @req SWS_Rte_06023 */
+
+        retVal |= Com_SendSignal(ComConf_ComSignal_PotValue, &value);
+
+    }
 
     return retVal;
 }
