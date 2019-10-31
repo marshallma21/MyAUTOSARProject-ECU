@@ -88,8 +88,8 @@ CounterType Os_Arc_OsTickCounter = COUNTER_ID_OsRteCounter;
 GEN_ALARM_AUTOSTART(
 				ALARM_ID_OsRteAlarm10ms,
 				ALARM_AUTOSTART_RELATIVE,
-				100,
-				100,
+				10,
+				10,
 				OSDEFAULTAPPMODE );
 
 GEN_ALARM_AUTOSTART(
