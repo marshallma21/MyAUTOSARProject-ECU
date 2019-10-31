@@ -39,6 +39,7 @@ inc-y += ../config/$(board_name)
 VPATH += ../src
 inc-y += ../src
 PROJECT_C_FILES=$(notdir $(wildcard ../*.c))
+PROJECT_C_FILES+=$(notdir $(wildcard ../src/*.c))
 obj-y += $(PROJECT_C_FILES:%.c=%.o)
 
 inc-y += ..
