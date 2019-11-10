@@ -1,0 +1,25 @@
+package s32k144evb.MyECUCanDbImportSignals
+
+/* SYSTEM SIGNALS */
+
+systemSignal IntReq
+systemSignal LEDSts
+systemSignal PotValue
+
+/* ISIGNALS */
+
+iSignal for IntReq as ISignalIntReq
+iSignal for LEDSts as ISignalLEDSts
+iSignal for PotValue as ISignalPotValue
+
+/* PDUS */
+
+iSignalPdu ECU01_01_3FE {
+	 iSignalIPduMapping for ISignalIntReq as IntReqMapping 
+}
+
+iSignalPdu MyECU_01_3FF {
+	 iSignalIPduMapping for ISignalLEDSts as LEDStsMapping 
+	 iSignalIPduMapping for ISignalPotValue as PotValueMapping 
+}
+
