@@ -1,0 +1,141 @@
+
+Name: generate_PC/Port_S32K146_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420376820520425876098802473087672725258562595824098
+ 1023710161551229752094914226414406567032192829017786
+
+Name: generate_PC/src/Port_Cfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773964323949906144978625746653628656788786910836443
+ 929278164528960422902949237467906886240115748164802177
+
+Name: generate_PC/Port_S32K118_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422948744212343359482606243296610908800846263953710
+ 8971368380437161408295745009639900256895678036842252
+
+Name: generate_PB/src/Port_PBcfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426167371039184731324900221514566197238889079700022
+ 8905521912810299578847171224644222120752686265606330
+
+Name: generate_PB/Port_S32K142_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420902405355255395134503428108627238499873905304643
+ 9640619452141298867903509507144643529574843876811791
+
+Name: generate_PB/Port_S32K148_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377423228928807474770531284038106464105688516783428622
+ 1165561857402523464435910387265336107560436413272663
+
+Name: generate_PC/include/Port_Cfg.h
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594742971738233698427877621415082514453288117007631953
+ 864949177800678696305856942689758667716259759504958066
+
+Name: generate_PB/Port_S32K118_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422606825474464814001844180470939730519523302721159
+ 8660828662871468632118238463717605073484643291176829
+
+Name: generate_PB/Port_S32K146_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426953538319405102797159943244884266160871471473693
+ 4714444143669195025398556886165052646040029502272461
+
+Name: generate_PB/Port_VersionCheck_Src_PB.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422851304302031409432521752104691627225340663679961
+ 8478130375755492915065284857996825662552242541925836
+
+Name: generate_PB/Port_S32K144_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420230705227508139744285332716844301133423148695794
+ 3980159677455753573849328637661725603334474254906117
+
+Name: generate_PC/Port_S32K142_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424235159398349574722402974803085109660399895135399
+ 6040703574226348565745233353478124464594485423487670
+
+Name: config/Port.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 74155374890360921692341234168400250380509233883527331664433
+ 01110078145065149471110150432440226962118382328822617495
+
+Name: generate_PB/Port_S32K1xx_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 44189296926203805859378944278302686156419157696597252078273
+ 6933079473226863391788742715175780231612774439141
+
+Name: generate_PC/Port_VersionCheck_Inc.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426910408870539064391334677327218996067711266485110
+ 5285848800385903552390756679615137304232779936259494
+
+Name: config_ext/PortRecConfiguration_JtagPins.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424646369825747636532128121807085862756862925512268
+ 1995951640122484768178448443454096408314646142121538
+
+Name: generate_PC/Port_S32K1xx_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426653907437067326763216947042556195064497068412223
+ 1354802434759622441251034402911716307942408520088783
+
+Name: generate_PC/Port_S32K144_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 74155374890368030786369644682506109941137167519526349948860
+ 58888730960736455314046232129254145174453463534408295831
+
+Name: generate_PC/Port_VersionCheck_Src.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426609095835509981417737766465901051314850376656375
+ 1166358031064635263747840525476731570416465146391641
+
+Name: generate_PC/Port_S32K148_Resource.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422171126673389477188352270575353023797553076984111
+ 2416458258463386511647368855030185214031972324880488
+

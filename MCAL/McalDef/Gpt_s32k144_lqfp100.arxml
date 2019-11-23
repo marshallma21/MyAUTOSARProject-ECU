@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:652061e3-3cc0-4598-aed1-038ea6f682f9">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -2905,7 +2905,7 @@
                         In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name.
                         This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                         &lt;ModuleName&gt;&lt;VendorId&gt;&lt;VendorApiInfix&gt;.
-                        E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
+                        E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
                         This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.
                         </L-2>
                   </DESC>

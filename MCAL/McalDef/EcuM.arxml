@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE>
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -295,7 +295,7 @@
                             <ECUC-STRING-PARAM-DEF UUID="ECUC:12bd72a8-580e-4e9d-b888-674212d2533d">
                               <SHORT-NAME>EcuMModuleService</SHORT-NAME>
                               <DESC>
-                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined &quot;Init&quot; is taken by default.</L-2>
+                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined "Init" is taken by default.</L-2>
                               </DESC>
                               <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                               <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -422,7 +422,7 @@
                             <ECUC-STRING-PARAM-DEF UUID="ECUC:12bf9728-731a-477d-bce8-9f874d464767">
                               <SHORT-NAME>EcuMModuleService</SHORT-NAME>
                               <DESC>
-                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined &quot;Init&quot; is taken by default.</L-2>
+                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined "Init" is taken by default.</L-2>
                               </DESC>
                               <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                               <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -549,7 +549,7 @@
                             <ECUC-STRING-PARAM-DEF UUID="ECUC:b7b9fa12-c11e-4a96-8384-abf8b0a85b58">
                               <SHORT-NAME>EcuMModuleService</SHORT-NAME>
                               <DESC>
-                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined &quot;Init&quot; is taken by default.</L-2>
+                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined "Init" is taken by default.</L-2>
                               </DESC>
                               <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                               <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1053,7 +1053,7 @@
                             <ECUC-STRING-PARAM-DEF UUID="ECUC:f11a9ff8-9c96-4a61-83d5-85853efdd6f8">
                               <SHORT-NAME>EcuMModuleService</SHORT-NAME>
                               <DESC>
-                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined &quot;Init&quot; is taken by default.</L-2>
+                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined "Init" is taken by default.</L-2>
                               </DESC>
                               <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                               <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1180,7 +1180,7 @@
                             <ECUC-STRING-PARAM-DEF UUID="ECUC:71012800-eb2f-48bd-b8fc-ee831bb27da2">
                               <SHORT-NAME>EcuMModuleService</SHORT-NAME>
                               <DESC>
-                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined &quot;Init&quot; is taken by default.</L-2>
+                                <L-2 L="EN">The service to be called to initialize that module, e.g. Init, PreInit, Start etc. If nothing is defined "Init" is taken by default.</L-2>
                               </DESC>
                               <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                               <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1503,7 +1503,7 @@
                         <ECUC-REFERENCE-DEF UUID="ECUC:a7f8f71e-191e-44d4-b07a-5460192c1846">
                           <SHORT-NAME>EcuMFlexEcucPartitionRef</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Denotes in which &quot;EcucPartition&quot; the user of the EcuM is executed.</L-2>
+                            <L-2 L="EN">Denotes in which "EcucPartition" the user of the EcuM is executed.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1793,7 +1793,7 @@
                 <ECUC-BOOLEAN-PARAM-DEF UUID="ECUC:076a376e-6b77-4305-b1cd-3f776440f086">
                   <SHORT-NAME>EcuMResetLoopDetection</SHORT-NAME>
                   <DESC>
-                    <L-2 L="EN">If false, no reset loop detection is performed. If this configuration parameter exists and is set to true, the callout &quot;EcuM_LoopDetection&quot; is called during startup of EcuM (during StartPreOS).</L-2>
+                    <L-2 L="EN">If false, no reset loop detection is performed. If this configuration parameter exists and is set to true, the callout "EcuM_LoopDetection" is called during startup of EcuM (during StartPreOS).</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1818,7 +1818,7 @@
                 <ECUC-BOOLEAN-PARAM-DEF UUID="ECUC:f2de2bbb-c7e2-44b8-a38f-09dd33c59f2f">
                   <SHORT-NAME>EcuMSetProgrammableInterrupts</SHORT-NAME>
                   <DESC>
-                    <L-2 L="EN">If this configuration parameter exists and is to true, the callout &quot;EcuM_AL_SetProgrammableInterrupts&quot; is called during startup of EcuM (during StartPreOS).</L-2>
+                    <L-2 L="EN">If this configuration parameter exists and is to true, the callout "EcuM_AL_SetProgrammableInterrupts" is called during startup of EcuM (during StartPreOS).</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2171,7 +2171,7 @@
                       In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name. 
                       This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                       &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                      E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
+                      E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
                       This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>

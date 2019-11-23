@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:d181f748-c450-4ef8-80d1-d14aecc37c86">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -81,7 +81,7 @@
                   <DESC>
                     <L-2 L="EN">
                                     
-                                        Reference to configured DEM event to report &quot;Hardware failure&quot;. If the reference is not configured the error shall not be reported.
+                                        Reference to configured DEM event to report "Hardware failure". If the reference is not configured the error shall not be reported.
                                     </L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -1278,8 +1278,8 @@
                       <DESC>
                         <L-2 L="EN">
                                                 
-                                                If SpiHwUnitSynchronous is set to &quot;SYNCHRONOUS&quot;, the SpiJob uses its containing SpiDriver in a synchronous manner.
-                                                                                If it is set to &quot;ASYNCHRONOUS&quot;, it uses the driver in an asynchronous way. If the parameter is not set, the SpiJob uses the driver also in an asynchronous way.
+                                                If SpiHwUnitSynchronous is set to "SYNCHRONOUS", the SpiJob uses its containing SpiDriver in a synchronous manner.
+                                                                                If it is set to "ASYNCHRONOUS", it uses the driver in an asynchronous way. If the parameter is not set, the SpiJob uses the driver also in an asynchronous way.
                                                     Note:The SpiHwUnitSynchronous parameter is defined at Job level in Autosar. It should be defined at HwUnit level. This paramater is added for AutoSAR compatibility purpose and this parameter is not used.The parameter SpiPhyUnitSync located in SpiPhyUnit tab is used for the same purpose
                                                 </L-2>
                       </DESC>
@@ -2103,7 +2103,7 @@
                     <L-2 L="EN">
                                         
                                             Header file name which will be included by the Spi. The value of this parameter shall be used as h-char-sequence or q-char-sequence according 
-                                            to ISO C90 section 6.10.2 &quot;source file inclusion&quot;. The parameter value MUST NOT represent a path, since ISO C90 does not specify how such a 
+                                            to ISO C90 section 6.10.2 "source file inclusion". The parameter value MUST NOT represent a path, since ISO C90 does not specify how such a 
                                             path is treated (i.e., this is implementation defined (and additionally depends on the operating system and the underlying file system)).
                                         </L-2>
                   </DESC>
@@ -2659,7 +2659,7 @@
                         </ECUC-ENUMERATION-LITERAL-DEF>
                       </LITERALS>
                     </ECUC-ENUMERATION-PARAM-DEF>
-                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87ab-dca373ed90acb">
+                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87af-ca373ed90acb">
                       <SHORT-NAME>SpiFlexioRxPinSelect</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
@@ -2728,7 +2728,7 @@
                         </ECUC-ENUMERATION-LITERAL-DEF>
                       </LITERALS>
                     </ECUC-ENUMERATION-PARAM-DEF>
-                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87ab-dca373ed900ab">
+                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87af-ca373ed900ab">
                       <SHORT-NAME>SpiFlexioClkPinSelect</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
@@ -2797,7 +2797,7 @@
                         </ECUC-ENUMERATION-LITERAL-DEF>
                       </LITERALS>
                     </ECUC-ENUMERATION-PARAM-DEF>
-                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87ab-dca373ed90132">
+                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87af-ca373ed90132">
                       <SHORT-NAME>SpiFlexioCsPinSelect</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
@@ -2866,7 +2866,7 @@
                         </ECUC-ENUMERATION-LITERAL-DEF>
                       </LITERALS>
                     </ECUC-ENUMERATION-PARAM-DEF>
-                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87ab-dca373ed90fff">
+                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87af-ca373ed90fff">
                       <SHORT-NAME>SpiFlexioClkPinSelectSlave</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
@@ -2935,7 +2935,7 @@
                         </ECUC-ENUMERATION-LITERAL-DEF>
                       </LITERALS>
                     </ECUC-ENUMERATION-PARAM-DEF>
-                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87ab-dca373ed90faf">
+                    <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:3d36d945-f64c-4874-87af-ca373ed90faf">
                       <SHORT-NAME>SpiFlexioCsPinSelectSlave</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
@@ -3474,7 +3474,7 @@
                                         In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name. 
                                         This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                                         &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.                    
-                                        E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.                     
+                                        E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.                     
                                         This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.
                                     </L-2>
                   </DESC>

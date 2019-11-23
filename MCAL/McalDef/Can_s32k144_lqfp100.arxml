@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd http://www.w3.org/XML/1998/namespace xml.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:181f65b6-f772-4dd7-b9a6-1186c4c7eba8">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -501,7 +501,7 @@
                         <L-2 L="EN"> 
                                             CTRL[LPB]: Enables CAN to operate in Loop Back Mode.
                                             The bit stream output of the transmitter is fed back internally to the receiver input.
-                                            The Rx CAN input pin is ignored and the Tx CAN output goes to the recessive state (logic &quot;1&quot;).
+                                            The Rx CAN input pin is ignored and the Tx CAN output goes to the recessive state (logic "1").
                                             NoteImplementation specific Parameter. Not AutoSar Required.
                                         </L-2>
                       </DESC>
@@ -889,7 +889,7 @@
                       <DESC>
                         <L-2 L="EN">
                                             CAN313_Conf. Reference to the CPU clock configuration, which is set in the MCU driver configuration.
-                                            This control is used only if &quot;CanClockFromBus&quot; = &quot;true&quot;.
+                                            This control is used only if "CanClockFromBus" = "true".
                                             MCU plugin need to be added and then give the reference to it.
                                         </L-2>
                       </DESC>
@@ -915,10 +915,10 @@
                       <DESC>
                         <L-2 L="EN">
                                             Reference to the CPU clock configuration, which is set in the MCU driver configuration.
-                                            This control is used only if &quot;CanClockFromBus&quot; = &quot;true&quot;.
+                                            This control is used only if "CanClockFromBus" = "true".
                                             MCU plugin need to be added and then give the reference to it.
                                             Note: This parameter is visible only if Can.CanConfig.DualClockMode=STD_ON from Resource files.
-                                            Note: This parameter is editable only if CanGeneral/CanEnableDualClockMode is set to &quot;true&quot; and &quot;CanClockFromBus&quot; is set to true.
+                                            Note: This parameter is editable only if CanGeneral/CanEnableDualClockMode is set to "true" and "CanClockFromBus" is set to true.
                                         </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -1081,7 +1081,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                     Specifies the CAN Bus length in meters.
-                                                    This parameter is used for PROPSEG parameter calculation when &quot;CanAdvancedSetting&quot; control is set to true.
+                                                    This parameter is used for PROPSEG parameter calculation when "CanAdvancedSetting" control is set to true.
                                                     NoteImplementation specific Parameter.
                                                </L-2>
                           </DESC>
@@ -1234,7 +1234,7 @@
                                                     The calculation of the resulting CanControllerTimeQuanta_Alternate value depending on module clocking and prescaller shall be done offline.
                                                     Prescaler = FreqCanClk / FreqTq; FreqTq = 1 / CanControllerTimeQuanta .
                                                     Note: This parameter is visible only if Can.CanConfig.DualClockMode=STD_ON from Resource files.
-                                                    Note: This parameter is editable only if CanGeneral/CanEnableDualClockMode is set to &quot;true&quot;.
+                                                    Note: This parameter is editable only if CanGeneral/CanEnableDualClockMode is set to "true".
                                                 </L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -2372,7 +2372,7 @@
                                                 It shall be distinguished between: 
                                                 - Standard identifier mask
                                                 - Extended identifier mask
-                                                0 - the corresponding bit in the filter is &quot;don't care&quot;. 
+                                                0 - the corresponding bit in the filter is "don't care". 
                                                 1 - the corresponding bit in the filter is used during the matching process. 
                                             </L-2>
                           </DESC>
@@ -4294,17 +4294,15 @@
                                       </VALUE-CONFIG-CLASSES>
                                       <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                                       <DEFAULT-VALUE>0</DEFAULT-VALUE>
-                                      <!-- @Calculated /TS_T40D2M10I2R0/Can/CanConfigSet/CanIcom/CanIcomConfig/CanIcomWakeupCauses/CanIcomRxMessage/CanIcomRxMessageSignalConfig/CanIcomSignalMask: INVALID(Range: &gt;=0, &lt;=18446744073709551615)-->
                                       <MAX>18446744073709551615</MAX>
                                       <MIN>0</MIN>
-                                      <!-- @CalculatedEnd -->
                                     </ECUC-INTEGER-PARAM-DEF>
                                     <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:eb0670b6-e848-47ce-9d0b-1723d30be663">
                                       <SHORT-NAME>CanIcomSignalOperation</SHORT-NAME>
                                       <DESC>
                                         <L-2 L="EN">
                                                                 This parameter defines the operation, which shall be used to verify the signal value creates a wakeup condition.
-                                                                The Calypso platform don't support the &quot;AND&quot; filter type.
+                                                                The Calypso platform don't support the "AND" filter type.
                                                                 </L-2>
                                       </DESC>
                                       <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -4373,16 +4371,14 @@
                                       </VALUE-CONFIG-CLASSES>
                                       <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                                       <DEFAULT-VALUE>0</DEFAULT-VALUE>
-                                      <!-- @Calculated /TS_T40D2M10I2R0/Can/CanConfigSet/CanIcom/CanIcomConfig/CanIcomWakeupCauses/CanIcomRxMessage/CanIcomRxMessageSignalConfig/CanIcomSignalValue: INVALID(Range: &gt;=0, &lt;=18446744073709551615)-->
                                       <MAX>18446744073709551615</MAX>
                                       <MIN>0</MIN>
-                                      <!-- @CalculatedEnd -->
                                     </ECUC-INTEGER-PARAM-DEF>
                                     <ECUC-INTEGER-PARAM-DEF UUID="ECUC:8e1660a2-9466-4f67-aea2-9c9117e3ae4d">
                                       <SHORT-NAME>DLCLowValue</SHORT-NAME>
                                       <DESC>
                                         <L-2 L="EN">
-                                                                    This is a non-autosar object. It is used to confgure the lowest value for the &quot;CAN_FLT_DLC&quot; register.
+                                                                    This is a non-autosar object. It is used to confgure the lowest value for the "CAN_FLT_DLC" register.
                                                                     That value is number data byte lowest of messages wake-up.
                                                                 </L-2>
                                       </DESC>
@@ -4410,7 +4406,7 @@
                                       <SHORT-NAME>DLCHighValue</SHORT-NAME>
                                       <DESC>
                                         <L-2 L="EN">
-                                                                    This is a non-autosar object. It is used to confgure the highest value for the &quot;CAN_FLT_DLC&quot; register.
+                                                                    This is a non-autosar object. It is used to confgure the highest value for the "CAN_FLT_DLC" register.
                                                                     That value is number data byte highest of messages wake-up.
                                                                 </L-2>
                                       </DESC>
@@ -4791,10 +4787,8 @@
                   </VALUE-CONFIG-CLASSES>
                   <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                   <DEFAULT-VALUE>32</DEFAULT-VALUE>
-                  <!-- @Calculated /TS_T40D2M10I2R0/Can/CanGeneral/CanMaxMessageBuffers: INVALID(XPath: (. &gt;=1) and (. &lt;=num:i((text:split(&apos;32&apos;,&apos; &apos;)[1]))))-->
                   <MAX>9223372036854775807</MAX>
                   <MIN>-9223372036854775808</MIN>
-                  <!-- @CalculatedEnd -->
                 </ECUC-INTEGER-PARAM-DEF>
                 <ECUC-FLOAT-PARAM-DEF UUID="ECUC:ef633bd3-5ecb-4d8a-a5db-9e04ce58cd11">
                   <SHORT-NAME>CanTimeoutDuration</SHORT-NAME>
@@ -5009,7 +5003,7 @@
                     <L-2 L="EN">
                                     Enables an additional API, to write an ABORT code (b1001) to the MBCB filed of the MB to abort a message transmission.
                                     Based on this value a define will be generated with STD_ON or STD_OFF value: CAN_API_ENABLE_ABORT_MB.
-                                    It is editable only if &quot;CanHardwareCancellation&quot; = true.
+                                    It is editable only if "CanHardwareCancellation" = true.
                                 </L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -5660,7 +5654,7 @@
                                              In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name.
                                                This parameter is used to specify the vendor specific name. In total, the Implementation specific name is generated as follows: 
                                                &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                                               E.g. assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name 
+                                               E.g. assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name 
                                                Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
                                                This parameter is mandatory for all modules with upper multiplicity &gt; 
                                                1. It shall not be used for modules with upper multiplicity =1.

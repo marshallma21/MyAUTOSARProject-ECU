@@ -5,621 +5,6 @@
       <SHORT-NAME>ApplicationLayer</SHORT-NAME>
       <AR-PACKAGES>
         <AR-PACKAGE>
-          <SHORT-NAME>Interface</SHORT-NAME>
-          <ELEMENTS>
-            <IMPLEMENTATION-DATA-TYPE UUID="a1d13186-b73c-31d2-99e8-eb80c31abef7">
-              <SHORT-NAME>IntImpl</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL>
-                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/uint8</BASE-TYPE-REF>
-                  </SW-DATA-DEF-PROPS-CONDITIONAL>
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </IMPLEMENTATION-DATA-TYPE>
-            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="c6af3af6-ed8f-3905-b9b3-048536d5bf20">
-              <SHORT-NAME>Int</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-            </APPLICATION-PRIMITIVE-DATA-TYPE>
-            <IMPLEMENTATION-DATA-TYPE UUID="48631915-9857-3767-b26f-c1cfe56d0241">
-              <SHORT-NAME>SwitchStatusImpl</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL>
-                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/boolean</BASE-TYPE-REF>
-                  </SW-DATA-DEF-PROPS-CONDITIONAL>
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </IMPLEMENTATION-DATA-TYPE>
-            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="9312c76b-9d24-3d77-8071-69b0eb5130c0">
-              <SHORT-NAME>SwitchStatus</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL />
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </APPLICATION-PRIMITIVE-DATA-TYPE>
-            <IMPLEMENTATION-DATA-TYPE UUID="eafb6d44-a569-3ca0-9b40-28254e0f8fcc">
-              <SHORT-NAME>LEDStatusImpl</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL>
-                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/boolean</BASE-TYPE-REF>
-                  </SW-DATA-DEF-PROPS-CONDITIONAL>
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </IMPLEMENTATION-DATA-TYPE>
-            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="621a08b7-4522-30e3-b684-41aa4d66285f">
-              <SHORT-NAME>LEDStatus</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL />
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </APPLICATION-PRIMITIVE-DATA-TYPE>
-            <IMPLEMENTATION-DATA-TYPE UUID="7b635eb0-2149-385c-bbef-771263d9445c">
-              <SHORT-NAME>IntensityStatusImpl</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL>
-                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/float32</BASE-TYPE-REF>
-                  </SW-DATA-DEF-PROPS-CONDITIONAL>
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </IMPLEMENTATION-DATA-TYPE>
-            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="a3a03868-12f9-3374-a522-df8bfb65d949">
-              <SHORT-NAME>IntensityStatus</SHORT-NAME>
-              <CATEGORY>VALUE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL />
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-            </APPLICATION-PRIMITIVE-DATA-TYPE>
-            <DATA-TYPE-MAPPING-SET UUID="c9bc86dc-fe58-3792-8ef5-78e8dfa973b0">
-              <SHORT-NAME>TypeMappings</SHORT-NAME>
-              <DATA-TYPE-MAPS>
-                <DATA-TYPE-MAP>
-                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/Int</APPLICATION-DATA-TYPE-REF>
-                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/IntImpl</IMPLEMENTATION-DATA-TYPE-REF>
-                </DATA-TYPE-MAP>
-                <DATA-TYPE-MAP>
-                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/SwitchStatus</APPLICATION-DATA-TYPE-REF>
-                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/SwitchStatusImpl</IMPLEMENTATION-DATA-TYPE-REF>
-                </DATA-TYPE-MAP>
-                <DATA-TYPE-MAP>
-                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/LEDStatus</APPLICATION-DATA-TYPE-REF>
-                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/LEDStatusImpl</IMPLEMENTATION-DATA-TYPE-REF>
-                </DATA-TYPE-MAP>
-                <DATA-TYPE-MAP>
-                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/IntensityStatus</APPLICATION-DATA-TYPE-REF>
-                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/IntensityStatusImpl</IMPLEMENTATION-DATA-TYPE-REF>
-                </DATA-TYPE-MAP>
-              </DATA-TYPE-MAPS>
-            </DATA-TYPE-MAPPING-SET>
-            <SENDER-RECEIVER-INTERFACE UUID="a9f8c300-e12d-365a-83d4-6573d538dc3d">
-              <SHORT-NAME>DataInterface</SHORT-NAME>
-              <IS-SERVICE>false</IS-SERVICE>
-              <DATA-ELEMENTS>
-                <VARIABLE-DATA-PROTOTYPE UUID="bbd1357b-d94b-3aa8-9f5a-25c8f02b7413">
-                  <SHORT-NAME>message</SHORT-NAME>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/Int</TYPE-TREF>
-                </VARIABLE-DATA-PROTOTYPE>
-              </DATA-ELEMENTS>
-            </SENDER-RECEIVER-INTERFACE>
-            <SENDER-RECEIVER-INTERFACE UUID="25ba4e21-2cdd-3af5-b1a8-4f6fd256788d">
-              <SHORT-NAME>swtInterface</SHORT-NAME>
-              <IS-SERVICE>false</IS-SERVICE>
-              <DATA-ELEMENTS>
-                <VARIABLE-DATA-PROTOTYPE UUID="c50fcc3e-26c2-3ae1-88be-51e0a27f41e2">
-                  <SHORT-NAME>status</SHORT-NAME>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/SwitchStatus</TYPE-TREF>
-                </VARIABLE-DATA-PROTOTYPE>
-              </DATA-ELEMENTS>
-            </SENDER-RECEIVER-INTERFACE>
-            <SENDER-RECEIVER-INTERFACE UUID="b0ab0806-cd42-303f-bb86-98fceae80e2b">
-              <SHORT-NAME>LEDStsInterface</SHORT-NAME>
-              <IS-SERVICE>false</IS-SERVICE>
-              <DATA-ELEMENTS>
-                <VARIABLE-DATA-PROTOTYPE UUID="fda2118b-702b-3459-89e1-252e0ced011c">
-                  <SHORT-NAME>status</SHORT-NAME>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/LEDStatus</TYPE-TREF>
-                </VARIABLE-DATA-PROTOTYPE>
-              </DATA-ELEMENTS>
-            </SENDER-RECEIVER-INTERFACE>
-            <SENDER-RECEIVER-INTERFACE UUID="7e552c2a-39e1-3ff6-8d1d-f17f62a6deeb">
-              <SHORT-NAME>IntStsInterface</SHORT-NAME>
-              <IS-SERVICE>false</IS-SERVICE>
-              <DATA-ELEMENTS>
-                <VARIABLE-DATA-PROTOTYPE UUID="3e178cb9-9097-31a0-a750-9f53a5d5c0d0">
-                  <SHORT-NAME>status</SHORT-NAME>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/IntensityStatus</TYPE-TREF>
-                </VARIABLE-DATA-PROTOTYPE>
-              </DATA-ELEMENTS>
-            </SENDER-RECEIVER-INTERFACE>
-          </ELEMENTS>
-        </AR-PACKAGE>
-        <AR-PACKAGE>
-          <SHORT-NAME>ApplicationPackage</SHORT-NAME>
-          <ELEMENTS>
-            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="8cf0a62b-3a53-3b39-9f6e-7a92f7f4b4ed">
-              <SHORT-NAME>LEDActuator</SHORT-NAME>
-              <PORTS>
-                <R-PORT-PROTOTYPE UUID="1809a4e5-c6fe-3d5d-9138-953e3f4eeceb">
-                  <SHORT-NAME>LEDSignal</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/DigitalServiceWrite</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-                <R-PORT-PROTOTYPE UUID="23a7ff49-9d21-3da8-a808-0da7525c48f8">
-                  <SHORT-NAME>LightSts</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/LEDStsInterface</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-              </PORTS>
-              <INTERNAL-BEHAVIORS>
-                <SWC-INTERNAL-BEHAVIOR UUID="8116ce4b-7c3f-3eae-a333-6b7ee3698361">
-                  <SHORT-NAME>LEDActuatorBehavior</SHORT-NAME>
-                  <EVENTS>
-                    <TIMING-EVENT UUID="275456dc-c1cb-4f1f-b1ef-862de245447f">
-                      <SHORT-NAME>LEDActuatorMainEvent</SHORT-NAME>
-                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/LEDActuator/LEDActuatorBehavior/LEDActuatorMain</START-ON-EVENT-REF>
-                      <PERIOD>0.01</PERIOD>
-                    </TIMING-EVENT>
-                  </EVENTS>
-                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                  <RUNNABLES>
-                    <RUNNABLE-ENTITY UUID="9edc5b49-c104-3f93-a76e-0e8ec8e6ad40">
-                      <SHORT-NAME>LEDActuatorMain</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                      <DATA-READ-ACCESSS>
-                        <VARIABLE-ACCESS UUID="7f94541b-39c5-3212-9af0-af02c2be1414">
-                          <SHORT-NAME>dataReadAccess_LEDActuatorMain_LightSts_status</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LEDActuator/LightSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/LEDStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-READ-ACCESSS>
-                      <SERVER-CALL-POINTS>
-                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="1d0545b5-bade-38c4-9645-3684e2b8182a">
-                          <SHORT-NAME>LEDSignal_Write</SHORT-NAME>
-                          <OPERATION-IREF>
-                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LEDActuator/LEDSignal</CONTEXT-R-PORT-REF>
-                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/DigitalServiceWrite/Write</TARGET-REQUIRED-OPERATION-REF>
-                          </OPERATION-IREF>
-                          <TIMEOUT>0.0</TIMEOUT>
-                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                      </SERVER-CALL-POINTS>
-                      <SYMBOL>LEDActuatorMain</SYMBOL>
-                    </RUNNABLE-ENTITY>
-                  </RUNNABLES>
-                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                </SWC-INTERNAL-BEHAVIOR>
-              </INTERNAL-BEHAVIORS>
-            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
-            <SWC-IMPLEMENTATION UUID="879ef103-ab19-33df-bfc7-225a3c2cc172">
-              <SHORT-NAME>LEDActuatorImpl</SHORT-NAME>
-              <CODE-DESCRIPTORS>
-                <CODE UUID="02b57dba-2cb2-3a74-8cde-042800c9b01f">
-                  <SHORT-NAME>src</SHORT-NAME>
-                  <ARTIFACT-DESCRIPTORS>
-                    <AUTOSAR-ENGINEERING-OBJECT>
-                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
-                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
-                    </AUTOSAR-ENGINEERING-OBJECT>
-                  </ARTIFACT-DESCRIPTORS>
-                </CODE>
-              </CODE-DESCRIPTORS>
-              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
-              <RESOURCE-CONSUMPTION UUID="59ea9f98-f886-3a99-8e7b-2edf38e4a221">
-                <SHORT-NAME>resourceConsumption</SHORT-NAME>
-              </RESOURCE-CONSUMPTION>
-              <VENDOR-ID>0</VENDOR-ID>
-              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/LEDActuator/LEDActuatorBehavior</BEHAVIOR-REF>
-            </SWC-IMPLEMENTATION>
-            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="543c7ffe-2ca1-361d-bff2-7809a82391b5">
-              <SHORT-NAME>SwtSensor</SHORT-NAME>
-              <PORTS>
-                <R-PORT-PROTOTYPE UUID="89e75a37-5cc5-31c7-bc05-67cd638f893e">
-                  <SHORT-NAME>SwtSignal</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/DigitalServiceRead</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-                <P-PORT-PROTOTYPE UUID="fc8ebcca-4ee0-3db6-a505-0ed0e9a59784">
-                  <SHORT-NAME>SwtSts</SHORT-NAME>
-                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/swtInterface</PROVIDED-INTERFACE-TREF>
-                </P-PORT-PROTOTYPE>
-              </PORTS>
-              <INTERNAL-BEHAVIORS>
-                <SWC-INTERNAL-BEHAVIOR UUID="d733159d-f016-3e89-bdf3-c0e27691de43">
-                  <SHORT-NAME>SwtSensorBehavior</SHORT-NAME>
-                  <DATA-TYPE-MAPPING-REFS>
-                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
-                  </DATA-TYPE-MAPPING-REFS>
-                  <EVENTS>
-                    <TIMING-EVENT UUID="42c6e661-86a3-4c78-a4c9-6b9e37ed46e8">
-                      <SHORT-NAME>SwtSensorMainEvent</SHORT-NAME>
-                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSensorBehavior/SwtSensorMain</START-ON-EVENT-REF>
-                      <PERIOD>0.01</PERIOD>
-                    </TIMING-EVENT>
-                  </EVENTS>
-                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                  <RUNNABLES>
-                    <RUNNABLE-ENTITY UUID="76ddc486-5d15-3590-8555-cd4d55549885">
-                      <SHORT-NAME>SwtSensorMain</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                      <DATA-WRITE-ACCESSS>
-                        <VARIABLE-ACCESS UUID="c21c0062-0b0d-3f32-aaf8-9dd0a0078ea1">
-                          <SHORT-NAME>dataWriteAccess_SwtSensorMain_SwtSts_status</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/swtInterface/status</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-WRITE-ACCESSS>
-                      <SERVER-CALL-POINTS>
-                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="1a415569-1fa8-378b-a7fb-0f5a84b53688">
-                          <SHORT-NAME>SwtSignal_Read</SHORT-NAME>
-                          <OPERATION-IREF>
-                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSignal</CONTEXT-R-PORT-REF>
-                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/DigitalServiceRead/Read</TARGET-REQUIRED-OPERATION-REF>
-                          </OPERATION-IREF>
-                          <TIMEOUT>0.0</TIMEOUT>
-                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                      </SERVER-CALL-POINTS>
-                      <SYMBOL>SwtSensorMain</SYMBOL>
-                    </RUNNABLE-ENTITY>
-                  </RUNNABLES>
-                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                </SWC-INTERNAL-BEHAVIOR>
-              </INTERNAL-BEHAVIORS>
-            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
-            <SWC-IMPLEMENTATION UUID="9134728d-2bbd-3b9c-90d3-f895a364ce97">
-              <SHORT-NAME>SwtSensorImpl</SHORT-NAME>
-              <CODE-DESCRIPTORS>
-                <CODE UUID="a057f80d-5a25-33fd-bee2-77e9ba205f2e">
-                  <SHORT-NAME>src</SHORT-NAME>
-                  <ARTIFACT-DESCRIPTORS>
-                    <AUTOSAR-ENGINEERING-OBJECT>
-                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
-                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
-                    </AUTOSAR-ENGINEERING-OBJECT>
-                  </ARTIFACT-DESCRIPTORS>
-                </CODE>
-              </CODE-DESCRIPTORS>
-              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
-              <RESOURCE-CONSUMPTION UUID="e1dcec68-704d-3b30-adf2-f2f3033ea591">
-                <SHORT-NAME>resourceConsumption</SHORT-NAME>
-              </RESOURCE-CONSUMPTION>
-              <VENDOR-ID>0</VENDOR-ID>
-              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSensorBehavior</BEHAVIOR-REF>
-            </SWC-IMPLEMENTATION>
-            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="b6dff458-9212-3ecf-bc64-ef918de3d7d9">
-              <SHORT-NAME>PotSensor</SHORT-NAME>
-              <PORTS>
-                <R-PORT-PROTOTYPE UUID="e35da483-4415-3bc4-a4ff-6df06ef055d2">
-                  <SHORT-NAME>POTSignal</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/AnalogServiceRead</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-                <P-PORT-PROTOTYPE UUID="9251f533-5946-33cc-b51a-b610bcbf6504">
-                  <SHORT-NAME>POTSts</SHORT-NAME>
-                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/DataInterface</PROVIDED-INTERFACE-TREF>
-                </P-PORT-PROTOTYPE>
-              </PORTS>
-              <INTERNAL-BEHAVIORS>
-                <SWC-INTERNAL-BEHAVIOR UUID="9523f67c-89f2-3b6d-9997-d4bc344909f6">
-                  <SHORT-NAME>PotSensorBehavior</SHORT-NAME>
-                  <EVENTS>
-                    <TIMING-EVENT UUID="85f597b5-d93d-41f5-b994-09d4da882481">
-                      <SHORT-NAME>PotSensorMainEvent</SHORT-NAME>
-                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/PotSensor/PotSensorBehavior/PotSensorMain</START-ON-EVENT-REF>
-                      <PERIOD>0.01</PERIOD>
-                    </TIMING-EVENT>
-                  </EVENTS>
-                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                  <RUNNABLES>
-                    <RUNNABLE-ENTITY UUID="37f83672-bf10-330f-9a2a-6980930a1a25">
-                      <SHORT-NAME>PotSensorMain</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                      <DATA-WRITE-ACCESSS>
-                        <VARIABLE-ACCESS UUID="6dcfb83a-4eb1-3a1e-99f4-f57ab399e279">
-                          <SHORT-NAME>dataWriteAccess_PotSensorMain_POTSts_message</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/PotSensor/POTSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/DataInterface/message</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-WRITE-ACCESSS>
-                      <SERVER-CALL-POINTS>
-                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="b8ae6a90-550a-3d54-aff4-c90c0cb7ecb5">
-                          <SHORT-NAME>POTSignal_Read</SHORT-NAME>
-                          <OPERATION-IREF>
-                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/PotSensor/POTSignal</CONTEXT-R-PORT-REF>
-                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/AnalogServiceRead/Read</TARGET-REQUIRED-OPERATION-REF>
-                          </OPERATION-IREF>
-                          <TIMEOUT>0.0</TIMEOUT>
-                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                      </SERVER-CALL-POINTS>
-                      <SYMBOL>PotSensorMain</SYMBOL>
-                    </RUNNABLE-ENTITY>
-                  </RUNNABLES>
-                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                </SWC-INTERNAL-BEHAVIOR>
-              </INTERNAL-BEHAVIORS>
-            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
-            <SWC-IMPLEMENTATION UUID="6aedf6c5-b61e-3f84-b6b2-85353858e667">
-              <SHORT-NAME>PotSensorImpl</SHORT-NAME>
-              <CODE-DESCRIPTORS>
-                <CODE UUID="9822d0c7-e738-3f11-849d-ab0319f8bcd9">
-                  <SHORT-NAME>src</SHORT-NAME>
-                  <ARTIFACT-DESCRIPTORS>
-                    <AUTOSAR-ENGINEERING-OBJECT>
-                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
-                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
-                    </AUTOSAR-ENGINEERING-OBJECT>
-                  </ARTIFACT-DESCRIPTORS>
-                </CODE>
-              </CODE-DESCRIPTORS>
-              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
-              <RESOURCE-CONSUMPTION UUID="65aa3317-0a54-354c-8bca-32c5b2171c5a">
-                <SHORT-NAME>resourceConsumption</SHORT-NAME>
-              </RESOURCE-CONSUMPTION>
-              <VENDOR-ID>0</VENDOR-ID>
-              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/PotSensor/PotSensorBehavior</BEHAVIOR-REF>
-            </SWC-IMPLEMENTATION>
-            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="e9ed2581-ad2f-387d-8366-f67104b40d5e">
-              <SHORT-NAME>IntController</SHORT-NAME>
-              <PORTS>
-                <R-PORT-PROTOTYPE UUID="c669d6a6-0365-3a7b-bf15-c625cb25d1f4">
-                  <SHORT-NAME>DutySignal</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/PwmServiceSetDuty</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-                <R-PORT-PROTOTYPE UUID="d2e96823-936b-3a57-bec4-8e737566e379">
-                  <SHORT-NAME>IntSts</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/IntStsInterface</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-              </PORTS>
-              <INTERNAL-BEHAVIORS>
-                <SWC-INTERNAL-BEHAVIOR UUID="601f6388-d5dc-38ea-844d-58ddc9255e4d">
-                  <SHORT-NAME>IntControllerBehavior</SHORT-NAME>
-                  <EVENTS>
-                    <TIMING-EVENT UUID="7c748700-b0c5-4245-a63a-0a06976f7ef0">
-                      <SHORT-NAME>IntControllerMainEvent</SHORT-NAME>
-                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/IntController/IntControllerBehavior/IntControllerMain</START-ON-EVENT-REF>
-                      <PERIOD>0.01</PERIOD>
-                    </TIMING-EVENT>
-                  </EVENTS>
-                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                  <RUNNABLES>
-                    <RUNNABLE-ENTITY UUID="522756dc-f62f-35f8-b96b-e86c1fa6f51d">
-                      <SHORT-NAME>IntControllerMain</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                      <DATA-READ-ACCESSS>
-                        <VARIABLE-ACCESS UUID="5305a204-c077-35ab-ae0f-ab5a6f5fe35c">
-                          <SHORT-NAME>dataReadAccess_IntControllerMain_IntSts_status</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/IntController/IntSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/IntStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-READ-ACCESSS>
-                      <SERVER-CALL-POINTS>
-                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="99763232-1093-3162-b84d-2095839f45fe">
-                          <SHORT-NAME>DutySignal_Set</SHORT-NAME>
-                          <OPERATION-IREF>
-                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/IntController/DutySignal</CONTEXT-R-PORT-REF>
-                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/PwmServiceSetDuty/Set</TARGET-REQUIRED-OPERATION-REF>
-                          </OPERATION-IREF>
-                          <TIMEOUT>0.0</TIMEOUT>
-                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                      </SERVER-CALL-POINTS>
-                      <SYMBOL>IntControllerMain</SYMBOL>
-                    </RUNNABLE-ENTITY>
-                  </RUNNABLES>
-                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                </SWC-INTERNAL-BEHAVIOR>
-              </INTERNAL-BEHAVIORS>
-            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
-            <SWC-IMPLEMENTATION UUID="6f3355ad-3a6d-3bda-a4da-fad2bf26231e">
-              <SHORT-NAME>IntControllerImpl</SHORT-NAME>
-              <CODE-DESCRIPTORS>
-                <CODE UUID="cf436f38-9061-3a52-9abf-d18337e00eb3">
-                  <SHORT-NAME>src</SHORT-NAME>
-                  <ARTIFACT-DESCRIPTORS>
-                    <AUTOSAR-ENGINEERING-OBJECT>
-                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
-                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
-                    </AUTOSAR-ENGINEERING-OBJECT>
-                  </ARTIFACT-DESCRIPTORS>
-                </CODE>
-              </CODE-DESCRIPTORS>
-              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
-              <RESOURCE-CONSUMPTION UUID="15fb4621-0afe-3a60-849d-298133ea0587">
-                <SHORT-NAME>resourceConsumption</SHORT-NAME>
-              </RESOURCE-CONSUMPTION>
-              <VENDOR-ID>0</VENDOR-ID>
-              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/IntController/IntControllerBehavior</BEHAVIOR-REF>
-            </SWC-IMPLEMENTATION>
-            <APPLICATION-SW-COMPONENT-TYPE UUID="a65d1f47-bb17-3232-b2ac-a48d06f01d45">
-              <SHORT-NAME>LightManager</SHORT-NAME>
-              <PORTS>
-                <R-PORT-PROTOTYPE UUID="5574aa3c-582a-3921-ac77-ccd04dbaa1dd">
-                  <SHORT-NAME>IntReq</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/DataInterface</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-                <P-PORT-PROTOTYPE UUID="bd50b933-cfe5-34bc-9a62-8e9ac90bffb5">
-                  <SHORT-NAME>LEDSts</SHORT-NAME>
-                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/DataInterface</PROVIDED-INTERFACE-TREF>
-                </P-PORT-PROTOTYPE>
-                <R-PORT-PROTOTYPE UUID="9ded6f6b-d2ef-3e5b-9e60-ddacb868748d">
-                  <SHORT-NAME>BtnPressed</SHORT-NAME>
-                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/swtInterface</REQUIRED-INTERFACE-TREF>
-                </R-PORT-PROTOTYPE>
-                <P-PORT-PROTOTYPE UUID="1bb24f2b-6e1e-33c3-b990-2eb7aa4278f7">
-                  <SHORT-NAME>BlueLiSts</SHORT-NAME>
-                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/LEDStsInterface</PROVIDED-INTERFACE-TREF>
-                </P-PORT-PROTOTYPE>
-                <P-PORT-PROTOTYPE UUID="419722d9-c1dd-331d-a165-2920e5e9c759">
-                  <SHORT-NAME>RedLiIntSts</SHORT-NAME>
-                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/IntStsInterface</PROVIDED-INTERFACE-TREF>
-                </P-PORT-PROTOTYPE>
-              </PORTS>
-              <INTERNAL-BEHAVIORS>
-                <SWC-INTERNAL-BEHAVIOR UUID="be2c65f9-8318-3be4-bb19-bdca767a09e3">
-                  <SHORT-NAME>LightManagerBehaviour</SHORT-NAME>
-                  <DATA-TYPE-MAPPING-REFS>
-                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
-                  </DATA-TYPE-MAPPING-REFS>
-                  <EVENTS>
-                    <TIMING-EVENT UUID="e7bf0f48-f517-4614-bb38-286840a686cf">
-                      <SHORT-NAME>TimeToggleLEDEvent</SHORT-NAME>
-                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/LightManager/LightManagerBehaviour/TimeToggleLED</START-ON-EVENT-REF>
-                      <PERIOD>0.01</PERIOD>
-                    </TIMING-EVENT>
-                    <TIMING-EVENT UUID="4a0232f3-2854-4e7f-a182-44e475ad53df">
-                      <SHORT-NAME>RedLiDimmingEvent</SHORT-NAME>
-                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/LightManager/LightManagerBehaviour/RedLiDimming</START-ON-EVENT-REF>
-                      <PERIOD>0.01</PERIOD>
-                    </TIMING-EVENT>
-                  </EVENTS>
-                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                  <RUNNABLES>
-                    <RUNNABLE-ENTITY UUID="e5fc3fa9-b904-31e4-b129-54c05a802c3a">
-                      <SHORT-NAME>TimeToggleLED</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                      <DATA-READ-ACCESSS>
-                        <VARIABLE-ACCESS UUID="2b16a549-f77c-394a-8485-d5a9d72055cd">
-                          <SHORT-NAME>dataReadAccess_TimeToggleLED_BtnPressed_status</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/BtnPressed</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/swtInterface/status</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-READ-ACCESSS>
-                      <DATA-WRITE-ACCESSS>
-                        <VARIABLE-ACCESS UUID="42837216-72b6-356d-ab6c-238ad64c4441">
-                          <SHORT-NAME>dataWriteAccess_TimeToggleLED_BlueLiSts_status</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/BlueLiSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/LEDStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                        <VARIABLE-ACCESS UUID="51428efa-a942-3676-a91d-aff4ad26bf44">
-                          <SHORT-NAME>dataWriteAccess_TimeToggleLED_LEDSts_message</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/LEDSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/DataInterface/message</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-WRITE-ACCESSS>
-                      <SYMBOL>TimeToggleLEDMain</SYMBOL>
-                    </RUNNABLE-ENTITY>
-                    <RUNNABLE-ENTITY UUID="1d420109-5232-361f-b64e-5da116f8d8fb">
-                      <SHORT-NAME>RedLiDimming</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                      <DATA-READ-ACCESSS>
-                        <VARIABLE-ACCESS UUID="220e3296-6772-3d3f-b301-272dffa8bdfd">
-                          <SHORT-NAME>dataReadAccess_RedLiDimming_IntReq_message</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/IntReq</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/DataInterface/message</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-READ-ACCESSS>
-                      <DATA-WRITE-ACCESSS>
-                        <VARIABLE-ACCESS UUID="1189e388-4bbd-39b3-9c34-0ce151d69705">
-                          <SHORT-NAME>dataWriteAccess_RedLiDimming_RedLiIntSts_status</SHORT-NAME>
-                          <ACCESSED-VARIABLE>
-                            <AUTOSAR-VARIABLE-IREF>
-                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/RedLiIntSts</PORT-PROTOTYPE-REF>
-                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/IntStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
-                            </AUTOSAR-VARIABLE-IREF>
-                          </ACCESSED-VARIABLE>
-                        </VARIABLE-ACCESS>
-                      </DATA-WRITE-ACCESSS>
-                      <SYMBOL>RedLiDimmingMain</SYMBOL>
-                    </RUNNABLE-ENTITY>
-                  </RUNNABLES>
-                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                </SWC-INTERNAL-BEHAVIOR>
-              </INTERNAL-BEHAVIORS>
-            </APPLICATION-SW-COMPONENT-TYPE>
-            <SWC-IMPLEMENTATION UUID="f568e6bc-d437-30b5-a637-90383bc07b49">
-              <SHORT-NAME>LightManagerImpl</SHORT-NAME>
-              <CODE-DESCRIPTORS>
-                <CODE UUID="0db1c0e3-7452-36fc-a8be-3797b00b827f">
-                  <SHORT-NAME>src</SHORT-NAME>
-                  <ARTIFACT-DESCRIPTORS>
-                    <AUTOSAR-ENGINEERING-OBJECT>
-                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
-                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
-                    </AUTOSAR-ENGINEERING-OBJECT>
-                  </ARTIFACT-DESCRIPTORS>
-                </CODE>
-              </CODE-DESCRIPTORS>
-              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
-              <RESOURCE-CONSUMPTION UUID="a164afc7-ef9c-33cd-841e-f0a9e664d16b">
-                <SHORT-NAME>resourceConsumption</SHORT-NAME>
-              </RESOURCE-CONSUMPTION>
-              <VENDOR-ID>0</VENDOR-ID>
-              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/LightManager/LightManagerBehaviour</BEHAVIOR-REF>
-            </SWC-IMPLEMENTATION>
-          </ELEMENTS>
-        </AR-PACKAGE>
-        <AR-PACKAGE>
           <SHORT-NAME>CompositionPackage</SHORT-NAME>
           <ELEMENTS>
             <COMPOSITION-SW-COMPONENT-TYPE UUID="2f890a8d-38bf-3b96-8eef-f19524b21845">
@@ -777,75 +162,185 @@
           </ELEMENTS>
         </AR-PACKAGE>
         <AR-PACKAGE>
-          <SHORT-NAME>Signals</SHORT-NAME>
+          <SHORT-NAME>Interface</SHORT-NAME>
           <ELEMENTS>
-            <SYSTEM-SIGNAL UUID="602eca45-4326-41f8-8210-5932fcb0b34d">
-              <SHORT-NAME>IntReq</SHORT-NAME>
-            </SYSTEM-SIGNAL>
-            <SYSTEM-SIGNAL UUID="e2bc5c47-e3b5-4058-9899-588c2eb4fcb4">
-              <SHORT-NAME>LEDSts</SHORT-NAME>
-            </SYSTEM-SIGNAL>
-            <SYSTEM-SIGNAL UUID="347aaffe-3b8d-492e-aff8-b62e9299800a">
-              <SHORT-NAME>PotValue</SHORT-NAME>
-            </SYSTEM-SIGNAL>
-            <I-SIGNAL UUID="3384a44e-2464-45a2-bc84-4b60e0dc8ae9">
-              <SHORT-NAME>ISignalIntReq</SHORT-NAME>
-              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
-              <LENGTH>0</LENGTH>
-              <NETWORK-REPRESENTATION-PROPS />
-              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/ApplicationLayer/Signals/IntReq</SYSTEM-SIGNAL-REF>
-            </I-SIGNAL>
-            <I-SIGNAL UUID="e3d634c7-9615-408b-94f4-b707ade34cbf">
-              <SHORT-NAME>ISignalLEDSts</SHORT-NAME>
-              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
-              <LENGTH>0</LENGTH>
-              <NETWORK-REPRESENTATION-PROPS />
-              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/ApplicationLayer/Signals/LEDSts</SYSTEM-SIGNAL-REF>
-            </I-SIGNAL>
-            <I-SIGNAL UUID="44255058-0575-454e-a5f0-2839a3e1653e">
-              <SHORT-NAME>ISignalPotValue</SHORT-NAME>
-              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
-              <LENGTH>0</LENGTH>
-              <NETWORK-REPRESENTATION-PROPS />
-              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/ApplicationLayer/Signals/PotValue</SYSTEM-SIGNAL-REF>
-            </I-SIGNAL>
-            <I-SIGNAL-I-PDU UUID="06755dbd-6621-46aa-9759-01376b6d7975">
-              <SHORT-NAME>ECU01_01_3FE</SHORT-NAME>
-              <I-SIGNAL-TO-PDU-MAPPINGS>
-                <I-SIGNAL-TO-I-PDU-MAPPING UUID="ccca21c1-8070-4a77-a9de-41936b374d64">
-                  <SHORT-NAME>IntReqMapping</SHORT-NAME>
-                  <I-SIGNAL-REF DEST="I-SIGNAL">/ApplicationLayer/Signals/ISignalIntReq</I-SIGNAL-REF>
-                </I-SIGNAL-TO-I-PDU-MAPPING>
-              </I-SIGNAL-TO-PDU-MAPPINGS>
-              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
-            </I-SIGNAL-I-PDU>
-            <I-SIGNAL-I-PDU UUID="4266e188-8bbb-44e7-8019-290f81e51d50">
-              <SHORT-NAME>MyECU_01_3FF</SHORT-NAME>
-              <I-SIGNAL-TO-PDU-MAPPINGS>
-                <I-SIGNAL-TO-I-PDU-MAPPING UUID="c9309577-08a9-4721-8720-a3b4d8fd5b50">
-                  <SHORT-NAME>LEDStsMapping</SHORT-NAME>
-                  <I-SIGNAL-REF DEST="I-SIGNAL">/ApplicationLayer/Signals/ISignalLEDSts</I-SIGNAL-REF>
-                </I-SIGNAL-TO-I-PDU-MAPPING>
-                <I-SIGNAL-TO-I-PDU-MAPPING UUID="e1b97811-75c0-4cf0-ae97-b009aaff339b">
-                  <SHORT-NAME>PotValueMapping</SHORT-NAME>
-                  <I-SIGNAL-REF DEST="I-SIGNAL">/ApplicationLayer/Signals/ISignalPotValue</I-SIGNAL-REF>
-                </I-SIGNAL-TO-I-PDU-MAPPING>
-              </I-SIGNAL-TO-PDU-MAPPINGS>
-              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
-            </I-SIGNAL-I-PDU>
+            <IMPLEMENTATION-DATA-TYPE UUID="a1d13186-b73c-31d2-99e8-eb80c31abef7">
+              <SHORT-NAME>IntImpl</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="c6af3af6-ed8f-3905-b9b3-048536d5bf20">
+              <SHORT-NAME>Int</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="48631915-9857-3767-b26f-c1cfe56d0241">
+              <SHORT-NAME>SwitchStatusImpl</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/boolean</BASE-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="9312c76b-9d24-3d77-8071-69b0eb5130c0">
+              <SHORT-NAME>SwitchStatus</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL />
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="eafb6d44-a569-3ca0-9b40-28254e0f8fcc">
+              <SHORT-NAME>LEDStatusImpl</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/boolean</BASE-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="621a08b7-4522-30e3-b684-41aa4d66285f">
+              <SHORT-NAME>LEDStatus</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL />
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <IMPLEMENTATION-DATA-TYPE UUID="7b635eb0-2149-385c-bbef-771263d9445c">
+              <SHORT-NAME>IntensityStatusImpl</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/ArcCore/Platform/BaseTypes/float32</BASE-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="a3a03868-12f9-3374-a522-df8bfb65d949">
+              <SHORT-NAME>IntensityStatus</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL />
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <DATA-TYPE-MAPPING-SET UUID="c9bc86dc-fe58-3792-8ef5-78e8dfa973b0">
+              <SHORT-NAME>TypeMappings</SHORT-NAME>
+              <DATA-TYPE-MAPS>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/Int</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/IntImpl</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/SwitchStatus</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/SwitchStatusImpl</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/LEDStatus</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/LEDStatusImpl</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/IntensityStatus</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ApplicationLayer/Interface/IntensityStatusImpl</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+              </DATA-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+            <SENDER-RECEIVER-INTERFACE UUID="a9f8c300-e12d-365a-83d4-6573d538dc3d">
+              <SHORT-NAME>DataInterface</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="bbd1357b-d94b-3aa8-9f5a-25c8f02b7413">
+                  <SHORT-NAME>message</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/Int</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="25ba4e21-2cdd-3af5-b1a8-4f6fd256788d">
+              <SHORT-NAME>swtInterface</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="c50fcc3e-26c2-3ae1-88be-51e0a27f41e2">
+                  <SHORT-NAME>status</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/SwitchStatus</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="b0ab0806-cd42-303f-bb86-98fceae80e2b">
+              <SHORT-NAME>LEDStsInterface</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="fda2118b-702b-3459-89e1-252e0ced011c">
+                  <SHORT-NAME>status</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/LEDStatus</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="7e552c2a-39e1-3ff6-8d1d-f17f62a6deeb">
+              <SHORT-NAME>IntStsInterface</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="3e178cb9-9097-31a0-a750-9f53a5d5c0d0">
+                  <SHORT-NAME>status</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/ApplicationLayer/Interface/IntensityStatus</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
           </ELEMENTS>
         </AR-PACKAGE>
         <AR-PACKAGE>
           <SHORT-NAME>EcuExtract</SHORT-NAME>
           <ELEMENTS>
-            <SYSTEM UUID="d4607f9e-0dd1-4503-9838-c16ec03ef240">
+            <SYSTEM UUID="a8290d44-7e9d-48dd-805d-c1e978cb9082">
               <SHORT-NAME>MyAUTOSAREcuExtract</SHORT-NAME>
               <CATEGORY>ECU_EXTRACT</CATEGORY>
               <MAPPINGS>
-                <SYSTEM-MAPPING UUID="21b60a60-6d5f-49ed-9b53-465786bec1b6">
+                <SYSTEM-MAPPING UUID="e245a273-47a1-42bf-bda1-c8abd9b17568">
                   <SHORT-NAME>ImplementationMappings</SHORT-NAME>
                   <SW-IMPL-MAPPINGS>
-                    <SWC-TO-IMPL-MAPPING UUID="7e24c98f-8845-4044-bc9e-a59908a50f0f">
+                    <SWC-TO-IMPL-MAPPING UUID="7be71fd8-3aca-4ebd-8cdb-99a057bb1034">
                       <SHORT-NAME>SwcToImplMapping_for_PotSensorImpl_to_PotSensorInstance</SHORT-NAME>
                       <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ApplicationLayer/ApplicationPackage/PotSensorImpl</COMPONENT-IMPLEMENTATION-REF>
                       <COMPONENT-IREFS>
@@ -855,7 +350,7 @@
                         </COMPONENT-IREF>
                       </COMPONENT-IREFS>
                     </SWC-TO-IMPL-MAPPING>
-                    <SWC-TO-IMPL-MAPPING UUID="974c5623-8a48-4293-99d1-e83cb87c969a">
+                    <SWC-TO-IMPL-MAPPING UUID="57cdf25d-be6e-4fa3-9735-2ffaeda6c86e">
                       <SHORT-NAME>SwcToImplMapping_for_SwtSensorImpl_to_SwtSensorInstance</SHORT-NAME>
                       <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ApplicationLayer/ApplicationPackage/SwtSensorImpl</COMPONENT-IMPLEMENTATION-REF>
                       <COMPONENT-IREFS>
@@ -865,7 +360,7 @@
                         </COMPONENT-IREF>
                       </COMPONENT-IREFS>
                     </SWC-TO-IMPL-MAPPING>
-                    <SWC-TO-IMPL-MAPPING UUID="cfab66b2-b832-4418-9d81-490a5494b76c">
+                    <SWC-TO-IMPL-MAPPING UUID="804a896e-fb60-4152-9786-2346a471f142">
                       <SHORT-NAME>SwcToImplMapping_for_IntControllerImpl_to_RedLiIntControllerInstance</SHORT-NAME>
                       <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ApplicationLayer/ApplicationPackage/IntControllerImpl</COMPONENT-IMPLEMENTATION-REF>
                       <COMPONENT-IREFS>
@@ -875,7 +370,7 @@
                         </COMPONENT-IREF>
                       </COMPONENT-IREFS>
                     </SWC-TO-IMPL-MAPPING>
-                    <SWC-TO-IMPL-MAPPING UUID="45be709f-874e-47ce-a6fb-aa6e686013fa">
+                    <SWC-TO-IMPL-MAPPING UUID="2a34352c-0569-4242-a056-b5cbf68e4c0d">
                       <SHORT-NAME>SwcToImplMapping_for_LEDActuatorImpl_to_BlueLiActuatorInstance</SHORT-NAME>
                       <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ApplicationLayer/ApplicationPackage/LEDActuatorImpl</COMPONENT-IMPLEMENTATION-REF>
                       <COMPONENT-IREFS>
@@ -885,7 +380,7 @@
                         </COMPONENT-IREF>
                       </COMPONENT-IREFS>
                     </SWC-TO-IMPL-MAPPING>
-                    <SWC-TO-IMPL-MAPPING UUID="9f191c77-542e-471e-9972-658cd30e2b4a">
+                    <SWC-TO-IMPL-MAPPING UUID="2b005910-4fbf-4bcf-8a65-469cf45a3d73">
                       <SHORT-NAME>SwcToImplMapping_for_LightManagerImpl_to_LightManagerInstance</SHORT-NAME>
                       <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ApplicationLayer/ApplicationPackage/LightManagerImpl</COMPONENT-IMPLEMENTATION-REF>
                       <COMPONENT-IREFS>
@@ -895,7 +390,7 @@
                         </COMPONENT-IREF>
                       </COMPONENT-IREFS>
                     </SWC-TO-IMPL-MAPPING>
-                    <SWC-TO-IMPL-MAPPING UUID="4a0fb537-177a-4cdd-8add-a6bc505cfa4e">
+                    <SWC-TO-IMPL-MAPPING UUID="54918468-1f47-4cf0-a67e-a89fc68ab442">
                       <SHORT-NAME>SwcToImplMapping_for_IoHwAbImpl_to_IoHwAbInstance</SHORT-NAME>
                       <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/BSWConfiguration/Services/IoHwAb/IoHwAbImpl</COMPONENT-IMPLEMENTATION-REF>
                       <COMPONENT-IREFS>
@@ -907,7 +402,7 @@
                     </SWC-TO-IMPL-MAPPING>
                   </SW-IMPL-MAPPINGS>
                 </SYSTEM-MAPPING>
-                <SYSTEM-MAPPING UUID="21c7c795-a2ab-46de-a27e-837874729d34">
+                <SYSTEM-MAPPING UUID="d0194473-d6ab-4895-84e3-7c9423e10380">
                   <SHORT-NAME>SignalMappings</SHORT-NAME>
                   <DATA-MAPPINGS>
                     <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
@@ -938,13 +433,527 @@
                 </SYSTEM-MAPPING>
               </MAPPINGS>
               <ROOT-SOFTWARE-COMPOSITIONS>
-                <ROOT-SW-COMPOSITION-PROTOTYPE UUID="9026103e-ec27-4294-ab4c-28a35db7ab9b">
+                <ROOT-SW-COMPOSITION-PROTOTYPE UUID="b1e6e81c-91c8-49f0-881f-6f50511a6e73">
                   <SHORT-NAME>RootSwComposition</SHORT-NAME>
                   <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ApplicationLayer/CompositionPackage/RootComposition</SOFTWARE-COMPOSITION-TREF>
                 </ROOT-SW-COMPOSITION-PROTOTYPE>
               </ROOT-SOFTWARE-COMPOSITIONS>
-              <SYSTEM-VERSION>1.0.0</SYSTEM-VERSION>
+              <SYSTEM-VERSION>1</SYSTEM-VERSION>
             </SYSTEM>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Signals</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM-SIGNAL UUID="3c0f847a-27f5-4f5d-97d1-e77c4102215a">
+              <SHORT-NAME>IntReq</SHORT-NAME>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL UUID="fe7d30d6-1fd8-4700-b67f-a672f9f08f08">
+              <SHORT-NAME>LEDSts</SHORT-NAME>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL UUID="e8ff9283-ab0f-407a-9a53-789ece15a004">
+              <SHORT-NAME>PotValue</SHORT-NAME>
+            </SYSTEM-SIGNAL>
+            <I-SIGNAL UUID="82c7bdac-bef4-4aa6-9fb3-9f58539ba872">
+              <SHORT-NAME>ISignalIntReq</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <LENGTH>0</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS />
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/ApplicationLayer/Signals/IntReq</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="d74d3a47-04b5-45f9-969d-ccca3d032908">
+              <SHORT-NAME>ISignalLEDSts</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <LENGTH>0</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS />
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/ApplicationLayer/Signals/LEDSts</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="4ee7f359-93aa-428d-8ab6-edc133ce724f">
+              <SHORT-NAME>ISignalPotValue</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <LENGTH>0</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS />
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/ApplicationLayer/Signals/PotValue</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL-I-PDU UUID="55d7e68f-e5f0-4ac8-bba6-6aa7252bb57d">
+              <SHORT-NAME>ECU01_01_3FE</SHORT-NAME>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="c1ce7f7c-2d61-43c9-9d74-9a49f99802f6">
+                  <SHORT-NAME>IntReqMapping</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/ApplicationLayer/Signals/ISignalIntReq</I-SIGNAL-REF>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="4e6c8190-9720-4245-9707-60e6579d7c4f">
+              <SHORT-NAME>MyECU_01_3FF</SHORT-NAME>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="f2a020e6-61b8-4e61-9d44-1277e12afc32">
+                  <SHORT-NAME>LEDStsMapping</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/ApplicationLayer/Signals/ISignalLEDSts</I-SIGNAL-REF>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="7eb0c527-ef46-46dd-a8e8-ad12d25c5d9e">
+                  <SHORT-NAME>PotValueMapping</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/ApplicationLayer/Signals/ISignalPotValue</I-SIGNAL-REF>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>ApplicationPackage</SHORT-NAME>
+          <ELEMENTS>
+            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="8cf0a62b-3a53-3b39-9f6e-7a92f7f4b4ed">
+              <SHORT-NAME>LEDActuator</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="1809a4e5-c6fe-3d5d-9138-953e3f4eeceb">
+                  <SHORT-NAME>LEDSignal</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/DigitalServiceWrite</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="23a7ff49-9d21-3da8-a808-0da7525c48f8">
+                  <SHORT-NAME>LightSts</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/LEDStsInterface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="8116ce4b-7c3f-3eae-a333-6b7ee3698361">
+                  <SHORT-NAME>LEDActuatorBehavior</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="0a2a6ac4-19c0-4a5d-aa80-1087fc97c506">
+                      <SHORT-NAME>LEDActuatorMainEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/LEDActuator/LEDActuatorBehavior/LEDActuatorMain</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="9edc5b49-c104-3f93-a76e-0e8ec8e6ad40">
+                      <SHORT-NAME>LEDActuatorMain</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS UUID="7f94541b-39c5-3212-9af0-af02c2be1414">
+                          <SHORT-NAME>dataReadAccess_LEDActuatorMain_LightSts_status</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LEDActuator/LightSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/LEDStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <SERVER-CALL-POINTS>
+                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="1d0545b5-bade-38c4-9645-3684e2b8182a">
+                          <SHORT-NAME>LEDSignal_Write</SHORT-NAME>
+                          <OPERATION-IREF>
+                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LEDActuator/LEDSignal</CONTEXT-R-PORT-REF>
+                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/DigitalServiceWrite/Write</TARGET-REQUIRED-OPERATION-REF>
+                          </OPERATION-IREF>
+                          <TIMEOUT>0.0</TIMEOUT>
+                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                      </SERVER-CALL-POINTS>
+                      <SYMBOL>LEDActuatorMain</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+            <SWC-IMPLEMENTATION UUID="879ef103-ab19-33df-bfc7-225a3c2cc172">
+              <SHORT-NAME>LEDActuatorImpl</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="02b57dba-2cb2-3a74-8cde-042800c9b01f">
+                  <SHORT-NAME>src</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
+                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="59ea9f98-f886-3a99-8e7b-2edf38e4a221">
+                <SHORT-NAME>resourceConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <VENDOR-ID>0</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/LEDActuator/LEDActuatorBehavior</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="b6dff458-9212-3ecf-bc64-ef918de3d7d9">
+              <SHORT-NAME>PotSensor</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="e35da483-4415-3bc4-a4ff-6df06ef055d2">
+                  <SHORT-NAME>POTSignal</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/AnalogServiceRead</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="9251f533-5946-33cc-b51a-b610bcbf6504">
+                  <SHORT-NAME>POTSts</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/DataInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="9523f67c-89f2-3b6d-9997-d4bc344909f6">
+                  <SHORT-NAME>PotSensorBehavior</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="5453539a-1787-4e9a-bab9-66af9c5f2e45">
+                      <SHORT-NAME>PotSensorMainEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/PotSensor/PotSensorBehavior/PotSensorMain</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="37f83672-bf10-330f-9a2a-6980930a1a25">
+                      <SHORT-NAME>PotSensorMain</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS UUID="6dcfb83a-4eb1-3a1e-99f4-f57ab399e279">
+                          <SHORT-NAME>dataWriteAccess_PotSensorMain_POTSts_message</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/PotSensor/POTSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/DataInterface/message</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <SERVER-CALL-POINTS>
+                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="b8ae6a90-550a-3d54-aff4-c90c0cb7ecb5">
+                          <SHORT-NAME>POTSignal_Read</SHORT-NAME>
+                          <OPERATION-IREF>
+                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/PotSensor/POTSignal</CONTEXT-R-PORT-REF>
+                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/AnalogServiceRead/Read</TARGET-REQUIRED-OPERATION-REF>
+                          </OPERATION-IREF>
+                          <TIMEOUT>0.0</TIMEOUT>
+                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                      </SERVER-CALL-POINTS>
+                      <SYMBOL>PotSensorMain</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+            <SWC-IMPLEMENTATION UUID="6aedf6c5-b61e-3f84-b6b2-85353858e667">
+              <SHORT-NAME>PotSensorImpl</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="9822d0c7-e738-3f11-849d-ab0319f8bcd9">
+                  <SHORT-NAME>src</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
+                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="65aa3317-0a54-354c-8bca-32c5b2171c5a">
+                <SHORT-NAME>resourceConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <VENDOR-ID>0</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/PotSensor/PotSensorBehavior</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="543c7ffe-2ca1-361d-bff2-7809a82391b5">
+              <SHORT-NAME>SwtSensor</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="89e75a37-5cc5-31c7-bc05-67cd638f893e">
+                  <SHORT-NAME>SwtSignal</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/DigitalServiceRead</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="fc8ebcca-4ee0-3db6-a505-0ed0e9a59784">
+                  <SHORT-NAME>SwtSts</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/swtInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="d733159d-f016-3e89-bdf3-c0e27691de43">
+                  <SHORT-NAME>SwtSensorBehavior</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="0896aa85-c1d4-4bdc-bd38-93ad8f253815">
+                      <SHORT-NAME>SwtSensorMainEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSensorBehavior/SwtSensorMain</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="76ddc486-5d15-3590-8555-cd4d55549885">
+                      <SHORT-NAME>SwtSensorMain</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS UUID="c21c0062-0b0d-3f32-aaf8-9dd0a0078ea1">
+                          <SHORT-NAME>dataWriteAccess_SwtSensorMain_SwtSts_status</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/swtInterface/status</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <SERVER-CALL-POINTS>
+                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="1a415569-1fa8-378b-a7fb-0f5a84b53688">
+                          <SHORT-NAME>SwtSignal_Read</SHORT-NAME>
+                          <OPERATION-IREF>
+                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSignal</CONTEXT-R-PORT-REF>
+                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/DigitalServiceRead/Read</TARGET-REQUIRED-OPERATION-REF>
+                          </OPERATION-IREF>
+                          <TIMEOUT>0.0</TIMEOUT>
+                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                      </SERVER-CALL-POINTS>
+                      <SYMBOL>SwtSensorMain</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+            <SWC-IMPLEMENTATION UUID="9134728d-2bbd-3b9c-90d3-f895a364ce97">
+              <SHORT-NAME>SwtSensorImpl</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="a057f80d-5a25-33fd-bee2-77e9ba205f2e">
+                  <SHORT-NAME>src</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
+                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="e1dcec68-704d-3b30-adf2-f2f3033ea591">
+                <SHORT-NAME>resourceConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <VENDOR-ID>0</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/SwtSensor/SwtSensorBehavior</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="a65d1f47-bb17-3232-b2ac-a48d06f01d45">
+              <SHORT-NAME>LightManager</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="5574aa3c-582a-3921-ac77-ccd04dbaa1dd">
+                  <SHORT-NAME>IntReq</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/DataInterface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="bd50b933-cfe5-34bc-9a62-8e9ac90bffb5">
+                  <SHORT-NAME>LEDSts</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/DataInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="9ded6f6b-d2ef-3e5b-9e60-ddacb868748d">
+                  <SHORT-NAME>BtnPressed</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/swtInterface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="1bb24f2b-6e1e-33c3-b990-2eb7aa4278f7">
+                  <SHORT-NAME>BlueLiSts</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/LEDStsInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="419722d9-c1dd-331d-a165-2920e5e9c759">
+                  <SHORT-NAME>RedLiIntSts</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/IntStsInterface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="be2c65f9-8318-3be4-bb19-bdca767a09e3">
+                  <SHORT-NAME>LightManagerBehaviour</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="d1057d0a-49c7-4b0a-be3b-52e0971cae76">
+                      <SHORT-NAME>TimeToggleLEDEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/LightManager/LightManagerBehaviour/TimeToggleLED</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                    <TIMING-EVENT UUID="53123ded-2e45-4076-963f-58b986360505">
+                      <SHORT-NAME>RedLiDimmingEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/LightManager/LightManagerBehaviour/RedLiDimming</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="e5fc3fa9-b904-31e4-b129-54c05a802c3a">
+                      <SHORT-NAME>TimeToggleLED</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS UUID="2b16a549-f77c-394a-8485-d5a9d72055cd">
+                          <SHORT-NAME>dataReadAccess_TimeToggleLED_BtnPressed_status</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/BtnPressed</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/swtInterface/status</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS UUID="42837216-72b6-356d-ab6c-238ad64c4441">
+                          <SHORT-NAME>dataWriteAccess_TimeToggleLED_BlueLiSts_status</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/BlueLiSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/LEDStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS UUID="51428efa-a942-3676-a91d-aff4ad26bf44">
+                          <SHORT-NAME>dataWriteAccess_TimeToggleLED_LEDSts_message</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/LEDSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/DataInterface/message</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <SYMBOL>TimeToggleLEDMain</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY UUID="1d420109-5232-361f-b64e-5da116f8d8fb">
+                      <SHORT-NAME>RedLiDimming</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS UUID="220e3296-6772-3d3f-b301-272dffa8bdfd">
+                          <SHORT-NAME>dataReadAccess_RedLiDimming_IntReq_message</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/IntReq</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/DataInterface/message</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS UUID="1189e388-4bbd-39b3-9c34-0ce151d69705">
+                          <SHORT-NAME>dataWriteAccess_RedLiDimming_RedLiIntSts_status</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/LightManager/RedLiIntSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/IntStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <SYMBOL>RedLiDimmingMain</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <SWC-IMPLEMENTATION UUID="f568e6bc-d437-30b5-a637-90383bc07b49">
+              <SHORT-NAME>LightManagerImpl</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="0db1c0e3-7452-36fc-a8be-3797b00b827f">
+                  <SHORT-NAME>src</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
+                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="a164afc7-ef9c-33cd-841e-f0a9e664d16b">
+                <SHORT-NAME>resourceConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <VENDOR-ID>0</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/LightManager/LightManagerBehaviour</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="e9ed2581-ad2f-387d-8366-f67104b40d5e">
+              <SHORT-NAME>IntController</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="c669d6a6-0365-3a7b-bf15-c625cb25d1f4">
+                  <SHORT-NAME>DutySignal</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ArcCore/Services/IoHwAb/PwmServiceSetDuty</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="d2e96823-936b-3a57-bec4-8e737566e379">
+                  <SHORT-NAME>IntSts</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ApplicationLayer/Interface/IntStsInterface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="601f6388-d5dc-38ea-844d-58ddc9255e4d">
+                  <SHORT-NAME>IntControllerBehavior</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ApplicationLayer/Interface/TypeMappings</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="dbc1efd9-d4fe-4c25-8176-e01500c556dd">
+                      <SHORT-NAME>IntControllerMainEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ApplicationLayer/ApplicationPackage/IntController/IntControllerBehavior/IntControllerMain</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="522756dc-f62f-35f8-b96b-e86c1fa6f51d">
+                      <SHORT-NAME>IntControllerMain</SHORT-NAME>
+                      <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS UUID="5305a204-c077-35ab-ae0f-ab5a6f5fe35c">
+                          <SHORT-NAME>dataReadAccess_IntControllerMain_IntSts_status</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/IntController/IntSts</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ApplicationLayer/Interface/IntStsInterface/status</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <SERVER-CALL-POINTS>
+                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="99763232-1093-3162-b84d-2095839f45fe">
+                          <SHORT-NAME>DutySignal_Set</SHORT-NAME>
+                          <OPERATION-IREF>
+                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationLayer/ApplicationPackage/IntController/DutySignal</CONTEXT-R-PORT-REF>
+                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/PwmServiceSetDuty/Set</TARGET-REQUIRED-OPERATION-REF>
+                          </OPERATION-IREF>
+                          <TIMEOUT>0.0</TIMEOUT>
+                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                      </SERVER-CALL-POINTS>
+                      <SYMBOL>IntControllerMain</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+            <SWC-IMPLEMENTATION UUID="6f3355ad-3a6d-3bda-a4da-fad2bf26231e">
+              <SHORT-NAME>IntControllerImpl</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="cf436f38-9061-3a52-9abf-d18337e00eb3">
+                  <SHORT-NAME>src</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>artifactDescriptor</SHORT-LABEL>
+                      <CATEGORY>artifactDescriptorCategory</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="15fb4621-0afe-3a60-849d-298133ea0587">
+                <SHORT-NAME>resourceConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <VENDOR-ID>0</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ApplicationLayer/ApplicationPackage/IntController/IntControllerBehavior</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
           </ELEMENTS>
         </AR-PACKAGE>
       </AR-PACKAGES>
@@ -982,7 +991,7 @@
                     <SWC-INTERNAL-BEHAVIOR UUID="a5be6740-ba1a-3635-99c7-25a4a259ac7a">
                       <SHORT-NAME>IoHwAbBehavior</SHORT-NAME>
                       <EVENTS>
-                        <OPERATION-INVOKED-EVENT UUID="1de82720-0fb4-4cfc-b1b4-6f40ba3c2f3e">
+                        <OPERATION-INVOKED-EVENT UUID="01690c42-687e-4613-990e-88e80896cfab">
                           <SHORT-NAME>DigitalRead_Digital_Swt_Read</SHORT-NAME>
                           <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/BSWConfiguration/Services/IoHwAb/IoHwAb/IoHwAbBehavior/DigitalRead</START-ON-EVENT-REF>
                           <OPERATION-IREF>
@@ -990,7 +999,7 @@
                             <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/DigitalServiceRead/Read</TARGET-PROVIDED-OPERATION-REF>
                           </OPERATION-IREF>
                         </OPERATION-INVOKED-EVENT>
-                        <OPERATION-INVOKED-EVENT UUID="2f39e5b8-db25-4627-8885-aa986e6c4e3f">
+                        <OPERATION-INVOKED-EVENT UUID="b3eeb734-dcf7-4e74-ab86-b44e697e5992">
                           <SHORT-NAME>DigitalWrite_Digital_BlueLED_Write</SHORT-NAME>
                           <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/BSWConfiguration/Services/IoHwAb/IoHwAb/IoHwAbBehavior/DigitalWrite</START-ON-EVENT-REF>
                           <OPERATION-IREF>
@@ -998,7 +1007,7 @@
                             <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/DigitalServiceWrite/Write</TARGET-PROVIDED-OPERATION-REF>
                           </OPERATION-IREF>
                         </OPERATION-INVOKED-EVENT>
-                        <OPERATION-INVOKED-EVENT UUID="7c618410-3ad7-4a6f-ac24-78b2f3241801">
+                        <OPERATION-INVOKED-EVENT UUID="6243ea25-8d08-488e-9e8b-242f2703c775">
                           <SHORT-NAME>AnalogRead_Analog_POT_Read</SHORT-NAME>
                           <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/BSWConfiguration/Services/IoHwAb/IoHwAb/IoHwAbBehavior/AnalogRead</START-ON-EVENT-REF>
                           <OPERATION-IREF>
@@ -1006,7 +1015,7 @@
                             <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ArcCore/Services/IoHwAb/AnalogServiceRead/Read</TARGET-PROVIDED-OPERATION-REF>
                           </OPERATION-IREF>
                         </OPERATION-INVOKED-EVENT>
-                        <OPERATION-INVOKED-EVENT UUID="bcc613a9-2301-49ed-8250-62ea3ad80a35">
+                        <OPERATION-INVOKED-EVENT UUID="a66eb1e6-47ab-4957-a4f3-ef073a655e85">
                           <SHORT-NAME>PwmSetDuty_Pwm_RedLEDDuty_Set</SHORT-NAME>
                           <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/BSWConfiguration/Services/IoHwAb/IoHwAb/IoHwAbBehavior/PwmSetDuty</START-ON-EVENT-REF>
                           <OPERATION-IREF>

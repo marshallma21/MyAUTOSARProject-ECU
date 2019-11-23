@@ -659,25 +659,33 @@ extern "C" {
 *
 */
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_ADC0_SE12  7
+#define PortConfigSet_0_PortContainer_0_PortPin_ADC0_SE12  13
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_Can_Rx  8
+#define PortConfigSet_0_PortContainer_0_PortPin_Can_Rx  12
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_Can_Tx  9
+#define PortConfigSet_0_PortContainer_0_PortPin_Can_Tx  11
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_EXTAL  5
+#define PortConfigSet_0_PortContainer_0_PortPin_EXTAL  4
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_EXT_CLOCK  6
+#define PortConfigSet_0_PortContainer_0_PortPin_EXT_CLOCK  10
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_Key1  3
+#define PortConfigSet_0_PortContainer_0_PortPin_Key1  9
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_LedRed  1
+#define PortConfigSet_0_PortContainer_0_PortPin_LedRed  8
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_LedGreen  2
+#define PortConfigSet_0_PortContainer_0_PortPin_LedGreen  6
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_LedBlue  0
+#define PortConfigSet_0_PortContainer_0_PortPin_LedBlue  7
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define PortConfigSet_0_PortContainer_0_PortPin_XTAL  4
+#define PortConfigSet_0_PortContainer_0_PortPin_XTAL  5
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_0_PortContainer_0_PortPin_JTAG_TCLK  0
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_0_PortContainer_0_PortPin_JTAG_TDI  1
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_0_PortContainer_0_PortPin_JTAG_TDO  2
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_0_PortContainer_0_PortPin_JTAG_TMS  3
 
 
 /**
@@ -698,12 +706,12 @@ extern "C" {
 /**
 * @brief The maximum number of configured pins
 */
-#define PORT_MAX_CONFIGURED_PADS_U16                        ((uint16)10)
+#define PORT_MAX_CONFIGURED_PADS_U16                        ((uint16)14)
 
 /**
  * @brief Number of UnUsed pin array
 */
-#define PORT_MAX_UNUSED_PADS_U16   (79U)
+#define PORT_MAX_UNUSED_PADS_U16   (75U)
 
 /**
 * @brief Port driver Post-build configuration switch

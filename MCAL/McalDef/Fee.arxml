@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:81222665-a211-4373-82da-0000966c66bd">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -1064,7 +1064,7 @@
                                 &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;. 
 
                                 E.g.  assuming that the VendorId of the implementor is 123 and the 
-                                implementer chose a VendorApiInfix of &quot;v11r456&quot; a API name 
+                                implementer chose a VendorApiInfix of "v11r456" a API name 
                                 Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
 
                                 This parameter is mandatory for all modules with 

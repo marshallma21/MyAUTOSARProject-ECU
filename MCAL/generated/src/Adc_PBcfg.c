@@ -188,6 +188,8 @@ extern "C"{
 * @details       ADC Notification functions defined inside the Plugin.
 *
 */
+/** @violates @ref Adc_PBcfg_C_REF_6 MISRA-C:2004 Rule 8.8: External object declared more than once.*/
+extern void IoHwAb_AdcConversionComplete(void); /**< @brief for Group - 0 */
 
 
 
@@ -410,8 +412,7 @@ static CONST(Adc_GroupConfigurationType, ADC_CONST) Adc_GroupsCfg[] =
 #endif /* (STD_ON==ADC_HW_TRIGGER_API) */
 #if (STD_ON==ADC_GRP_NOTIF_CAPABILITY)
         /**< @brief Notification function */
-
-        NULL_PTR,
+        &IoHwAb_AdcConversionComplete,
 #endif /* (STD_ON==ADC_GRP_NOTIF_CAPABILITY) */
 #if (ADC_ENABLE_INITIAL_NOTIFICATION == STD_ON)
         /**< @brief Extra notification function */

@@ -833,7 +833,7 @@ static CONST( Mcu_PCC_RegisterConfigType, MCU_CONST) PCC_aRegistersConfigPB0_0[M
         PCC_ADC0_ADDR32,
         (
             PCC_CLOCK_ENABLED_U32
-             | PCC_PCS_EXT_CLK_OR_CLK_OFF_U32
+             | PCC_PCS_SOSC_U32
             
         )
     }

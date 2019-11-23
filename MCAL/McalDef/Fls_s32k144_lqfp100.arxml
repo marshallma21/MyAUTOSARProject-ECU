@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:13b01487-a247-46d3-a33d-b0e8314620b6">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -819,7 +819,7 @@
                       <SHORT-NAME>FLS_E_COMPARE_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Flash compare failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Flash compare failed (HW)" has occurred.
                                                 Note: This container is set to obsolete and will be removed in release 4.3.
                                             </L-2>
                       </DESC>
@@ -855,7 +855,7 @@
                       <SHORT-NAME>FLS_E_ERASE_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Flash erase failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Flash erase failed (HW)" has occurred.
                                                 Note: This container is set to obsolete and will be removed in release 4.3.
                                             </L-2>
                       </DESC>
@@ -891,7 +891,7 @@
                       <SHORT-NAME>FLS_E_READ_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Flash read failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Flash read failed (HW)" has occurred.
                                                 Note: This container is set to obsolete and will be removed in release 4.3.
                                             </L-2>
                       </DESC>
@@ -927,7 +927,7 @@
                       <SHORT-NAME>FLS_E_UNEXPECTED_FLASH_ID</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Expected hardware ID not matched&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Expected hardware ID not matched" has occurred.
                                                 Note: This error is applicable only for external flash, if available.
                                                 Note: When this error is enabled, the user should enable and configure also the FlsLUTReadIdSequenceIdRef LUT sequence reference
                                                 and the FlsQspiDeviceID.
@@ -966,7 +966,7 @@
                       <SHORT-NAME>FLS_E_WRITE_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Flash write failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Flash write failed (HW)" has occurred.
                                                 Note: This container is set to obsolete and will be removed in release 4.3. 
                                             </L-2>
                       </DESC>
@@ -2424,7 +2424,7 @@
                           <SHORT-NAME>FlsQspiDeviceId</SHORT-NAME>
                           <DESC>
                             <L-2 L="EN">
-                                                        External memory ID. If the associated &quot;FLS_E_UNEXPECTED_FLASH_ID&quot; error is enabled, at Init, 
+                                                        External memory ID. If the associated "FLS_E_UNEXPECTED_FLASH_ID" error is enabled, at Init, 
                                                         the configured value is checked against the value read from memory.
                                                         The memory ID is read from the memory using the configured READ_ID LUT sequence. 
                                                         Example for a Macronix device:
@@ -5109,7 +5109,7 @@
                 </ECUC-INTEGER-PARAM-DEF>
               </PARAMETERS>
               <SUB-CONTAINERS>
-                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:A7370699-CF10-4646-A2D6-165CBB6F33E7">
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:a7370699-cf10-4646-a2d6-165cbb6f33e7">
                   <SHORT-NAME>FlsTimeouts</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
@@ -5130,7 +5130,7 @@
                   </MULTIPLICITY-CONFIG-CLASSES>
                   <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
                   <PARAMETERS>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:8D905719-6A85-492F-8985-33B88A6E4A04">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:8d905719-6a85-492f-8985-33b88a6e4a04">
                       <SHORT-NAME>FlsAsyncWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5158,7 +5158,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:6922DE7A-8051-4241-A982-2C66D90C96CF">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:6922de7a-8051-4241-a982-2c66d90c96cf">
                       <SHORT-NAME>FlsAsyncEraseTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5186,7 +5186,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:BF0D9C17-55A5-4FBF-BAE9-07A8B91D9C0D">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:bf0d9c17-55a5-4fbf-bae9-07a8b91d9c0d">
                       <SHORT-NAME>FlsSyncWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5214,7 +5214,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2445505ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2445505ade49">
                       <SHORT-NAME>FlsSyncEraseTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5242,7 +5242,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2445515ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2445515ade49">
                       <SHORT-NAME>FlsQspiSyncReadTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5270,7 +5270,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2445525ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2445525ade49">
                       <SHORT-NAME>FlsQspiAsyncWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5298,7 +5298,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2445535ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2445535ade49">
                       <SHORT-NAME>FlsQspiAsyncEraseTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5326,7 +5326,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2445545ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2445545ade49">
                       <SHORT-NAME>FlsQspiSyncWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5354,7 +5354,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2445555ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2445555ade49">
                       <SHORT-NAME>FlsQspiSyncEraseTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5382,7 +5382,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2455555ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2455555ade49">
                       <SHORT-NAME>FlsQspiIrqReadTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5411,7 +5411,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2465555ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2465555ade49">
                       <SHORT-NAME>FlsQspiIrqEraseTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5440,7 +5440,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430C09A-28CD-4B52-828A-2475555ADE49">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:1430c09a-28cd-4b52-828a-2475555ade49">
                       <SHORT-NAME>FlsQspiIrqWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -5469,7 +5469,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:7303873D-5BA1-44D3-9620-9A0F72F9129D">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:7303873d-5ba1-44d3-9620-9a0f72f9129d">
                       <SHORT-NAME>FlsAbortTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -6000,7 +6000,7 @@
                                             In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name.
                                             This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                                             &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                                            E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
+                                            E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
                                             This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.
                                             
                                             </L-2>

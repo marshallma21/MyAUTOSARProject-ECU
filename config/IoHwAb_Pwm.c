@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
  *-------------------------------- Arctic Core -----------------------------*/
 
-/* Generator version: 1.0.0
+/* Generator version: 1.1.0
  * AUTOSAR version:   4.0.3
  */
 
@@ -22,6 +22,7 @@
 #include "IoHwAb_Internal.h"
 #include "IoHwAb_Pwm.h"
 #include "IoHwAb_Dcm.h"
+#include "SchM_IoHwAb.h"
 
 
 #if defined(USE_DET) 
@@ -40,7 +41,7 @@ extern Pwm_PeriodType IoHwAb_Pwm_ConvertToPeriod( Pwm_ChannelType channel, IoHwA
 /* Pwm signal: RedLED */
 boolean IoHwAb_RedLED_Locked = FALSE;
 IoHwAb_DutyType IoHwAb_RedLED_Saved = 0;
-const IoHwAb_DutyType IoHwAb_RedLED_Default = 0;
+const IoHwAb_DutyType IoHwAb_RedLED_Default = 32768;
 
 
 Std_ReturnType IoHwAb_Pwm_Set_Duty_RedLED(IoHwAb_DutyType duty, IoHwAb_StatusType *status) {
@@ -63,12 +64,11 @@ Std_ReturnType IoHwAb_Pwm_Set_Duty_RedLED(IoHwAb_DutyType duty, IoHwAb_StatusTyp
 
 /* Pwm signal: RedLED */
 /* @req ARCIOHWAB012 */
-Std_ReturnType IoHwAb_Dcm_RedLED(uint8 action, IoHwAb_DutyType *value)
+Std_ReturnType IoHwAb_Dcm_RedLED(uint8 action, uint8* value)
 {
     Std_ReturnType ret = E_OK;
-    imask_t state;
     IoHwAb_StatusType status;
-    IoHwAb_LockSave(state);
+    SchM_Enter_IoHwAb_EA_0();
     boolean tempLock = IoHwAb_RedLED_Locked;
     switch(action) {
     case IOHWAB_RETURNCONTROLTOECU:
@@ -89,7 +89,7 @@ Std_ReturnType IoHwAb_Dcm_RedLED(uint8 action, IoHwAb_DutyType *value)
         break;
     case IOHWAB_SHORTTERMADJUST:
         {
-			IoHwAb_DutyType duty = *(value);
+            IoHwAb_DutyType duty = GetU32FromPtr(value);
             if(IS_VALID_DUTY_CYCLE(duty)) {
                 IoHwAb_RedLED_Locked = FALSE;
                 if(E_OK != IoHwAb_Pwm_Set_Duty_RedLED(duty, &status)) {
@@ -110,14 +110,13 @@ Std_ReturnType IoHwAb_Dcm_RedLED(uint8 action, IoHwAb_DutyType *value)
         ret = E_NOT_OK;
         break;
     }
-    IoHwAb_LockRestore(state);
+    SchM_Exit_IoHwAb_EA_0();
     return ret;
-/*lint --e{818} *value cannot be declared as pointing to const it is type casted in this function  */     
 }
 
 
-Std_ReturnType IoHwAb_Dcm_Read_RedLED(IoHwAb_DutyType* value) {
-	*value = IoHwAb_RedLED_Saved;
+Std_ReturnType IoHwAb_Dcm_Read_RedLED(uint8* value) {
+	SetU32ToPtr(IoHwAb_RedLED_Saved, value);
 	return E_OK;
 }
 

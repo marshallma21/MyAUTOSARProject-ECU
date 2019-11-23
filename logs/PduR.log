@@ -1,0 +1,12 @@
+
+=== PduR ===
+
+-Validating module PduR...
+
+-Generating module PduR...
+		PduR.mk
+		PduR_Cfg.h
+		PduR_Cfg.c
+		PduR_PbCfg.h
+		PduR_PbCfg.c
+PduR done.

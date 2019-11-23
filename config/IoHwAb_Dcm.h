@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
  *-------------------------------- Arctic Core -----------------------------*/
 
-/* Generator version: 1.0.0
+/* Generator version: 1.1.0
  * AUTOSAR version:   4.0.3
  */
 
@@ -21,22 +21,22 @@
 #define IOHWAB_DCM_H_
 
 /* Digital signal: Swt */
-Std_ReturnType IoHwAb_Dcm_Swt(uint8 action, IoHwAb_LevelType *value);
-Std_ReturnType IoHwAb_Dcm_Read_Swt(IoHwAb_LevelType *value);
+Std_ReturnType IoHwAb_Dcm_Swt(uint8 action, uint8 *value);
+Std_ReturnType IoHwAb_Dcm_Read_Swt(uint8 *value);
 
 /* Digital signal: BlueLED */
-Std_ReturnType IoHwAb_Dcm_BlueLED(uint8 action, IoHwAb_LevelType *value);
-Std_ReturnType IoHwAb_Dcm_Read_BlueLED(IoHwAb_LevelType *value);
+Std_ReturnType IoHwAb_Dcm_BlueLED(uint8 action, uint8 *value);
+Std_ReturnType IoHwAb_Dcm_Read_BlueLED(uint8 *value);
 
 
 /* Analog signal: POT */
-Std_ReturnType IoHwAb_Dcm_POT(uint8 action, IoHwAb_AnalogValueType *value);
-Std_ReturnType IoHwAb_Dcm_Read_POT(IoHwAb_AnalogValueType *value);
+Std_ReturnType IoHwAb_Dcm_POT(uint8 action, uint8 *value);
+Std_ReturnType IoHwAb_Dcm_Read_POT(uint8 *value);
 
 
 /* Pwm signal: RedLED */
-Std_ReturnType IoHwAb_Dcm_RedLED(uint8 action, IoHwAb_DutyType *value);
-Std_ReturnType IoHwAb_Dcm_Read_RedLED(IoHwAb_DutyType *value);
+Std_ReturnType IoHwAb_Dcm_RedLED(uint8 action, uint8 *value);
+Std_ReturnType IoHwAb_Dcm_Read_RedLED(uint8 *value);
 
 
 #endif /* IOHWAB_DCM_H_ */

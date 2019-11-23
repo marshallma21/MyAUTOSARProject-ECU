@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:13b01487-a247-46d3-a33d-b0a0314620b6">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -577,7 +577,7 @@
                       <SHORT-NAME>EEP_E_COMPARE_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Eeprom compare failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Eeprom compare failed (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -612,7 +612,7 @@
                       <SHORT-NAME>EEP_E_ERASE_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Eeprom erase failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Eeprom erase failed (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -647,7 +647,7 @@
                       <SHORT-NAME>EEP_E_READ_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Eeprom read failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Eeprom read failed (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -682,7 +682,7 @@
                       <SHORT-NAME>EEP_E_WRITE_FAILED</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Eeprom write failed (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Eeprom write failed (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -717,7 +717,7 @@
                       <SHORT-NAME>EEP_E_BO_MAINTENANCE</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Brown out detected before completing EEPROM quick write maintenance (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Brown out detected before completing EEPROM quick write maintenance (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -752,7 +752,7 @@
                       <SHORT-NAME>EEP_E_BO_QUICK_WRITES</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Brown out detected before completing EEPROM quick writes (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Brown out detected before completing EEPROM quick writes (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -787,7 +787,7 @@
                       <SHORT-NAME>EEP_E_BO_NORMAL_WRITES</SHORT-NAME>
                       <DESC>
                         <L-2 L="EN">
-                                                Reference to the DemEventParameter which shall be issued when the error &quot;Brown out detected before completing EEPROM normal writes (HW)&quot; has occurred.
+                                                Reference to the DemEventParameter which shall be issued when the error "Brown out detected before completing EEPROM normal writes (HW)" has occurred.
                                             </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
@@ -1354,7 +1354,7 @@
                 </ECUC-BOOLEAN-PARAM-DEF>
               </PARAMETERS>
               <SUB-CONTAINERS>
-                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:A7370699-CF10-4646-A2D6-D15CBB6F33E7">
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:a7370699-cf10-4646-a2d6-d15cbb6f33e7">
                   <SHORT-NAME>EepTimeouts</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
@@ -1375,7 +1375,7 @@
                   </MULTIPLICITY-CONFIG-CLASSES>
                   <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
                   <PARAMETERS>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:8D905719-6A85-492F-8985-d2B88A6E4A04">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:8d905719-6a85-492f-8985-d2b88a6e4a04">
                       <SHORT-NAME>EepAsyncWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -1403,7 +1403,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:BF0D9C17-55A5-4FBF-BAE9-D3A8B91D9C0D">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:bf0d9c17-55a5-4fbf-bae9-d3a8b91d9c0d">
                       <SHORT-NAME>EepSyncWriteTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -1431,7 +1431,7 @@
                       <MAX>2147483647</MAX>
                       <MIN>0</MIN>
                     </ECUC-INTEGER-PARAM-DEF>
-                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:7303873D-5BA1-44D3-9620-D60F72F9129D">
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:7303873d-5ba1-44d3-9620-d60f72f9129d">
                       <SHORT-NAME>EepAbortTimeout</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">
@@ -2004,7 +2004,7 @@
                                             In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name.
                                             This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                                             &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                                            E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
+                                            E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
                                             This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.
                                             
                                             </L-2>

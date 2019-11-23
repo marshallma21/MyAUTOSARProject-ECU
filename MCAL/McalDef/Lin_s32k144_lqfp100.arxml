@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:93e6601e-da37-4f47-8685-8d3f54ae5df6">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -326,7 +326,7 @@
                 <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:111e0a82-ab9f-4c95-879f-b686bbba6c65">
                   <SHORT-NAME>LIN_E_TIMEOUT</SHORT-NAME>
                   <DESC>
-                    <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Timeout caused by hardware error&quot; has occured.</L-2>
+                    <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Timeout caused by hardware error" has occured.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -376,7 +376,7 @@
                     <L-2 L="EN">
                                                 
                                                 This container contains the configuration (parameters) of the LIN Controller(s).
-                                                Note:&quot;User should use unique names for naming the LIN channels across different LinGlobalConfig Sets.&quot;
+                                                Note:"User should use unique names for naming the LIN channels across different LinGlobalConfig Sets."
                                                 </L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -679,7 +679,7 @@
                         <L-2 L="EN">
                                                     
                                                     This container contains the configuration (parameters) of the LIN Controller(s).
-                                                    Note:&quot;User should use unique names for naming the LIN channels across different LinGlobalConfig Sets.&quot;
+                                                    Note:"User should use unique names for naming the LIN channels across different LinGlobalConfig Sets."
                                                     </L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -1016,7 +1016,7 @@
                                                 In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name.
                                                 This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                                                 &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                                                E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
+                                                E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
                                                 This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.
                                                 
                                             </L-2>

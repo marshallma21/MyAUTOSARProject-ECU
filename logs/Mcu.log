@@ -1,0 +1,9 @@
+
+=== Mcu ===
+
+-Validating module Mcu...
+	Module Mcu has no BswImplementation
+
+-Generating module Mcu...
+	SKIPPED (disabled)
+Mcu done.

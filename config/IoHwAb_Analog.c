@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
  *-------------------------------- Arctic Core -----------------------------*/
 
-/* Generator version: 1.0.0
+/* Generator version: 1.1.0
  * AUTOSAR version:   4.0.3
  */
 /*lint -emacro(904,IOHWAB_VALIDATE_RETURN)*/ /*904 PC-Lint exception to MISRA 14.7 (validate DET macros)*/
@@ -21,7 +21,7 @@
 #include "IoHwAb_Internal.h"
 #include "IoHwAb_Analog.h"
 #include "IoHwAb_Dcm.h"
-
+#include "SchM_IoHwAb.h"
 #ifdef USE_DEM
 #include "Dem.h" 
 #endif
@@ -94,12 +94,11 @@ Std_ReturnType IoHwAb_Analog_Read_POT(IoHwAb_VoltType* value, IoHwAb_StatusType 
 
 /* Analog signal: POT */
 /* @req ARCIOHWAB009 */
-Std_ReturnType IoHwAb_Dcm_POT(uint8 action, IoHwAb_AnalogValueType *value)
+Std_ReturnType IoHwAb_Dcm_POT(uint8 action, uint8* value)
 {
     IoHwAb_StatusType status;
     Std_ReturnType ret = E_OK;
-    imask_t state;
-    IoHwAb_LockSave(state);
+    SchM_Enter_IoHwAb_EA_0();
     boolean tempLock = IoHwAb_POT_Locked;
     switch(action) {
     case IOHWAB_RETURNCONTROLTOECU:
@@ -120,7 +119,7 @@ Std_ReturnType IoHwAb_Dcm_POT(uint8 action, IoHwAb_AnalogValueType *value)
         break;
     case IOHWAB_SHORTTERMADJUST:
         {
-            IoHwAb_POT_Saved = (IoHwAb_VoltType) *value;
+            IoHwAb_POT_Saved = GetS32FromPtr(value);
             IoHwAb_POT_Locked = TRUE;
         }
         break;
@@ -129,23 +128,23 @@ Std_ReturnType IoHwAb_Dcm_POT(uint8 action, IoHwAb_AnalogValueType *value)
         ret = E_NOT_OK;
         break;
     }
-    IoHwAb_LockRestore(state);
+    SchM_Exit_IoHwAb_EA_0();
     return ret;
-/*lint --e{818} *value cannot be declared as pointing to const it is type casted in this function  */    
 }
 
 
-Std_ReturnType IoHwAb_Dcm_Read_POT(IoHwAb_AnalogValueType *value)
+Std_ReturnType IoHwAb_Dcm_Read_POT(uint8* value)
 {
     Std_ReturnType ret;
     IoHwAb_StatusType status;
-    imask_t state;
-    IoHwAb_LockSave(state);
+    IoHwAb_VoltType level;
+    SchM_Enter_IoHwAb_EA_0();
     boolean tempLock = IoHwAb_POT_Locked;
     IoHwAb_POT_Locked = FALSE;
-    ret = IoHwAb_Analog_Read_POT((IoHwAb_VoltType*)value, &status);/*lint !e927 !e826 cast from pointer to pointer  */
+    ret = IoHwAb_Analog_Read_POT(&level, &status);
+    SetS32ToPtr(level, value);
     IoHwAb_POT_Locked = tempLock;
-    IoHwAb_LockRestore(state);
+    SchM_Exit_IoHwAb_EA_0();
     return ret;
 }
 

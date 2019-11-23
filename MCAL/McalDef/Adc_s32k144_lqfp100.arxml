@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:d2455832-7e3a-4ea7-a76c-86b3aa137c21">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -1960,7 +1960,7 @@
                           <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                           <DEFAULT-VALUE>false</DEFAULT-VALUE>
                         </ECUC-BOOLEAN-PARAM-DEF>
-                        <ECUC-INTEGER-PARAM-DEF UUID="ECUC:9a91442b-1277-4d7d-8059-624a47f18644c">
+                        <ECUC-INTEGER-PARAM-DEF UUID="ECUC:9a91442b-1277-4d7d-805f-24a47f18644c">
                           <SHORT-NAME>AdcDelayNextPdb</SHORT-NAME>
                           <DESC>
                             <L-2 L="EN">The PDB unit can have one or more PDB Channels of 8 pretriggers each that will be used together for setting up conversions of large groups. The PDB Channels will be started together when the PDB unit is triggered, thus risking to request conversions at the same time and causing internal errors. For this reason, the value of AdcDelayNextPdb is needed to be added as delay between PDB channels when Back to Back mode is used. The AdcDelayNextPdb value should be greater than the timing to convert 8 channels. The maximum total conversion time is determined by the clock source chosen and the divide ratio selected. The clock source is selectable by CFG1[ADICLK], and the divide ratio is specified by CFG1[ADIV]. To calculate total conversion time for one channel the following formula is applied: ADC TOTAL CONVERSION TIME = Sample Phase Time (set by SMPLTS+1) + Hold Phase (1 ADC Cycle) + Compare Phase Time (8-bit Mode=20 ADC Cycles, 10-bit Mode=24 ADC Cycles, 12-bit Mode=28 ADC Cycles) + Single or First continuous time adder (5 ADC cycles + 5 bus clock cycles).</L-2>
@@ -1986,7 +1986,7 @@
                           <MAX>65535</MAX>
                           <MIN>0</MIN>
                         </ECUC-INTEGER-PARAM-DEF>
-                        <ECUC-INTEGER-PARAM-DEF UUID="ECUC:9a91442b-1277-477d-8059-624a47f18644c">
+                        <ECUC-INTEGER-PARAM-DEF UUID="ECUC:9a91442b-1277-477d-805f-24a47f18644c">
                           <SHORT-NAME>AdcPdbPeriodContinuousMode</SHORT-NAME>
                           <DESC>
                             <L-2 L="EN">The period of PBD module in continuous mode. This is specific and only used for continuous group without interrupt. The PDB period should be big enough to ensure all of the channels complete the convertion before PDB restarts</L-2>
@@ -2252,7 +2252,7 @@
                             </ECUC-ENUMERATION-PARAM-DEF>
                           </PARAMETERS>
                         </ECUC-PARAM-CONF-CONTAINER-DEF>
-                        <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:0cb2283c-677d-434e-80a6-169b5c1131">
+                        <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:0cb2283c-677d-434e-80a6-00169b5c1131">
                           <SHORT-NAME>AdcGroupAlternateConversionTimings</SHORT-NAME>
                           <DESC>
                             <L-2 L="FOR-ALL"> Selects alternate values used for programming clock frequency, conversion timing and hardwre averaging. This is available when AdcEnableDualClockMode has been enabled and AdcConvTimeOnce has been disable. </L-2>
@@ -2921,10 +2921,8 @@
                       </VALUE-CONFIG-CLASSES>
                       <SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
                       <DEFAULT-VALUE>0</DEFAULT-VALUE>
-                      <!-- @Calculated /TS_T40D2M10I2R0/Adc/AdcGeneral/AdcPowerStateConfig/AdcPowerState: INVALID(Range: &lt;=18446744073709551615, &gt;=0)-->
                       <MAX>18446744073709551615</MAX>
                       <MIN>0</MIN>
-                      <!-- @CalculatedEnd -->
                     </ECUC-INTEGER-PARAM-DEF>
                     <ECUC-FUNCTION-NAME-DEF UUID="ECUC:b9c222fc-6b92-40e9-922e-f73addaf2320">
                       <SHORT-NAME>AdcPowerStateReadyCbkRef</SHORT-NAME>
@@ -3341,7 +3339,7 @@
                       In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name. 
                       This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                       &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                      E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
+                      E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
                       This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -3413,8 +3411,8 @@
                     <L-2 L="EN">This is used to generate ADC symbolic names, that depend also on the ADC group 
                         to which each ADC channel is mapped. The generated symbolic name will be something 
                         like:
-                        #define &quot;ADC_GroupName&quot;_&quot;ADC_ChannelName&quot;  &quot;Channel index value&quot;, 
-                        where &quot;Channel index value&quot; is the channel index in the current group.
+                        #define "ADC_GroupName"_"ADC_ChannelName"  "Channel index value", 
+                        where "Channel index value" is the channel index in the current group.
                         Channel indexes in each group are generated to allow result buffer access by symbolic names.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -3465,7 +3463,7 @@
                   <SHORT-NAME>AdcEnableCalibration</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
-                          If this parameter has been configured to &quot;TRUE&quot;, the Non-Autosar function &quot;Adc_Calibrate()&quot;  shall be accessible, otherwise this function shall be removed from the code.
+                          If this parameter has been configured to "TRUE", the Non-Autosar function "Adc_Calibrate()"  shall be accessible, otherwise this function shall be removed from the code.
                           NoteThis is an Implementation Specific Parameter.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -3491,7 +3489,7 @@
                   <SHORT-NAME>AdcEnableSetChannel</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
-                          If this parameter has been configured to &quot;TRUE&quot;, the Non-Autosar function &quot;Adc_SetChannel()&quot;  shall be accessible, otherwise this function shall be removed from the code.
+                          If this parameter has been configured to "TRUE", the Non-Autosar function "Adc_SetChannel()"  shall be accessible, otherwise this function shall be removed from the code.
                           NoteThis is an Implementation Specific Parameter.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
@@ -3794,7 +3792,7 @@
                   <SHORT-NAME>ADC_E_TIMEOUT</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
-                            Reference to configured DEM event to report &quot;Timeout failure&quot;.</L-2>
+                            Reference to configured DEM event to report "Timeout failure".</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>

@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:4e2bf364-f11f-448b-a99a-3bbc25527965">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -307,7 +307,7 @@
                   <DESC>
                     <L-2 L="EN">
                                                 Check this if you want a callout function, called by MCU right before Mcu_PerformReset().
-                                                This parameter is available for configuration only if &quot;McuPerformResetApi&quot; is ON.
+                                                This parameter is available for configuration only if "McuPerformResetApi" is ON.
                                                 #define MCU_RESET_CALLOUT_USED (STD_ON)/(STD_OFF) will be generated in Mcu_Cfg.h file.
                                                 Note: Implementation Specific Parameter.
                                             </L-2>
@@ -336,7 +336,7 @@
                   <DESC>
                     <L-2 L="EN">
                                                 Function name of callout.
-                                                The field is editable only if &quot;McuCalloutBeforePerformReset&quot; is ON.
+                                                The field is editable only if "McuCalloutBeforePerformReset" is ON.
                                                 Note: Implementation Specific Parameter.
                                             </L-2>
                   </DESC>
@@ -1018,7 +1018,7 @@
                                              In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name.
                                                This parameter is used to specify the vendor specific name. In total, the Implementation specific name is generated as follows:
                                                &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                                               E.g. assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name
+                                               E.g. assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name
                                                Can_Write defined in the SWS will translate to Can_123_v11r456Write.
                                                This parameter is mandatory for all modules with upper multiplicity &gt;
                                                1. It shall not be used for modules with upper multiplicity =1.
@@ -1095,8 +1095,8 @@
                   <SHORT-NAME>McuNumberOfMcuModes</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
-                                                    This parameter shall represent the number of Modes available for the MCU (from &quot;McuModeSettingConf&quot; list).
-                                                    CalculationFormula = Number of configured &quot;McuModeSettingConf&quot;.
+                                                    This parameter shall represent the number of Modes available for the MCU (from "McuModeSettingConf" list).
+                                                    CalculationFormula = Number of configured "McuModeSettingConf".
                                                     This parameter is not used.
                                                 </L-2>
                   </DESC>
@@ -1125,8 +1125,8 @@
                   <SHORT-NAME>McuRamSectors</SHORT-NAME>
                   <DESC>
                     <L-2 L="EN">
-                                                    This parameter shall represent the number of RAM sectors available for the MCU (from &quot;McuRamSectorSettingConf&quot; list).
-                                                    CalculationFormula = Number of configured &quot;McuRamSectorSettingConf&quot;.
+                                                    This parameter shall represent the number of RAM sectors available for the MCU (from "McuRamSectorSettingConf" list).
+                                                    CalculationFormula = Number of configured "McuRamSectorSettingConf".
                                                     This parameter is not used.
                                                 </L-2>
                   </DESC>
@@ -4329,7 +4329,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 Run Core clock - Pre Divide System Clock Frequency. 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container. 
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container. 
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: PREDIV_SYS_CLK is only available in S32K148. 
                                                                 Note: Implementation Specific Parameter. 
@@ -4361,7 +4361,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 Run Core clock - Clocks the ARM core, divided by DIVCORE bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter. 
                                                             </L-2>
@@ -4393,7 +4393,7 @@
                             <L-2 L="EN">
                                                                 Run System clock - Clocks the Crossbar, NVIC, Flash controller, FTM and PDB,etc. 
                                                                 RUN_SYS_CLK can run up to CORE_CLK. 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -4424,7 +4424,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 Run Bus clock - BUS_CLK Clocks the Peripherals, divided by DIVBUS bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -4455,7 +4455,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 Run Flash clock - Clocks the flash module, divided by DIVSLOW bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -4682,7 +4682,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 VLPR Core clock - Pre Divide System Clock Frequency. 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container. 
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container. 
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: PREDIV_SYS_CLK is only available in S32K148. 
                                                                 Note: Implementation Specific Parameter. 
@@ -4714,7 +4714,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 VLPR Core clock - Clocks the ARM core, divided by DIVCORE bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter. 
                                                             </L-2>
@@ -4746,7 +4746,7 @@
                             <L-2 L="EN">
                                                                 VLPR System clock - Clocks the Crossbar, NVIC, Flash controller, FTM and PDB,etc. 
                                                                 VLPR_SYS_CLK can run up to CORE_CLK. 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -4777,7 +4777,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 VLPR Bus clock - BUS_CLK Clocks the Peripherals, divided by DIVBUS bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -4808,7 +4808,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 VLPR Flash clock - Clocks the flash module, divided by DIVSLOW bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -5017,7 +5017,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 HSRUN System clock - Pre Divide System Clock Frequency. 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container. 
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container. 
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: PREDIV_SYS_CLK is only available in S32K148. 
                                                                 Note: Implementation Specific Parameter. 
@@ -5049,7 +5049,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 HSRUN Core clock - Clocks the ARM core, divided by DIVCORE bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter. 
                                                             </L-2>
@@ -5081,7 +5081,7 @@
                             <L-2 L="EN">
                                                                 HSRUN System clock - Clocks the Crossbar, NVIC, Flash controller, FTM and PDB,etc. 
                                                                 HSRUN_SYS_CLK can run up to CORE_CLK. 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -5112,7 +5112,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 HSRUN Bus clock - BUS_CLK Clocks the Peripherals, divided by DIVBUS bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -5143,7 +5143,7 @@
                           <DESC>
                             <L-2 L="EN">
                                                                 HSRUN Flash clock - Clocks the flash module, divided by DIVSLOW bits inside SCG 
-                                                                This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                 Value calculated for user info. It is given in Hz. 
                                                                 Note: Implementation Specific Parameter.
                                                             </L-2>
@@ -7239,7 +7239,7 @@
                         <L-2 L="EN">
                                                             This container contains the specific configuration (parameters) of the Monitor_0.
                                                             Clock Monitor Unit for Motor Clock.
-                                                            This parameter is enabled only if &quot;McuClockSrcFailureNotification&quot; is enabled.
+                                                            This parameter is enabled only if "McuClockSrcFailureNotification" is enabled.
                                                             Note: Implementation Specific Parameter.
                                                         </L-2>
                       </DESC>
@@ -7432,7 +7432,7 @@
                         <L-2 L="EN">
                                                             This container contains the specific configuration (parameters) of the Monitor_1.
                                                             Clock Monitor Unit for Motor Clock.
-                                                            This parameter is enabled only if &quot;McuClockSrcFailureNotification&quot; is enabled.
+                                                            This parameter is enabled only if "McuClockSrcFailureNotification" is enabled.
                                                             Note: Implementation Specific Parameter.
                                                         </L-2>
                       </DESC>
@@ -7950,7 +7950,7 @@
                             <L-2 L="EN">
                                                                     Divider output clock = Divider input clock x [(FRAC+1)/(DIV+1)]. 
                                                                     This is only calculated if the clock source is selectable and if the peripheral is enabled. 
-                                                                    This is the frequency for the specific instance of the &quot;McuClockReferencePoint&quot; container.
+                                                                    This is the frequency for the specific instance of the "McuClockReferencePoint" container.
                                                                     Value calculated for user info. It is given in Hz. 
                                                                     Note: The maximum frequency of LPUARTx, LPSPIx, LPI2Cx, FLEXIO, LPTMR0 and LPIT are governed by BUS_CLK, 
                                                                     FTMx are governed by SYS_CLK, ADCx are 50MHz but always less than BUS_CLK.
@@ -8590,7 +8590,7 @@
                         <L-2 L="EN">
                                                             This parameter represents the RAM section base address.
                                                             The address must be aligned to 4 bytes.
-                                                            If this parameter is empty, then the integer values from &quot;McuRamSectionBaseAddress&quot; will be used.
+                                                            If this parameter is empty, then the integer values from "McuRamSectionBaseAddress" will be used.
                                                             Note: Implementation Specific Parameter.
                                                         </L-2>
                       </DESC>
@@ -8624,7 +8624,7 @@
                         <L-2 L="EN">
                                                             This parameter represents the RAM section size in bytes.
                                                             The size must be multiple of 4.
-                                                            If this parameter is empty, then the integer values from &quot;McuRamSectionSize&quot; will be used.
+                                                            If this parameter is empty, then the integer values from "McuRamSectionSize" will be used.
                                                             Note: Implementation Specific Parameter.
                                                         </L-2>
                       </DESC>

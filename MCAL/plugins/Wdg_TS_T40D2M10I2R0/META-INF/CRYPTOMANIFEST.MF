@@ -1,0 +1,113 @@
+
+Name: generate_LT/src/Wdg_Lcfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426396770609438934355806710016162141990643935912258
+ 0339298558830160791533404392759378050546928739838089
+
+Name: generate/include/Wdg_VersionCheck_Inc.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420640498976242696165693412781951012505600111602505
+ 5365846654336250019593311788669004856662970426634182
+
+Name: generate_PB/src/Wdg_VersionCheck_Src_PB.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377425465511720882835585833657465609791134578875053613
+ 1188259761617280930638383826788076729910649473818283
+
+Name: config/Wdg.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377425957019975963484741267271618303426657000137918342
+ 1441484396651101621098228220147299949389626810539689
+
+Name: generate/src/Wdg_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377427099535316236037848274769950397759708392001917682
+ 7638274442240392305842872625519572421469760055234738
+
+Name: generate/include/Wdg_Cfg.h
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421826521725905330701753031255277011363417603000016
+ 5894794465542938036397337217248216289032839988703915
+
+Name: generate/src/Wdg_VersionCheck_Src.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594751590299353663665594301147714833006652374494215849
+ 647628350743375050916371746642805680526690507465984343
+
+Name: generate/src/Wdg_CfgExt.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773974736159020147256335691953253185001874833514943
+ 371762805046527330413713462400453811450520934419173202
+
+Name: generate_LT/src/Wdg_VersionCheck_Src_LT.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773970373135286468163906629564242191261449976934602
+ 214864775263636448306344187565490577518769997565926551
+
+Name: generate_PB/src/Wdg_PBcfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426072856700974077933047014344156670445805675779244
+ 9057526542057175016561212344394788639348103709895092
+
+Name: generate/include/Wdg_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594745172647017570774069910429169100805904487476741671
+ 022891153945037267554829513635519909518273730144445513
+
+Name: generate_PC/src/Wdg_Cfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422818691662109987791795485434419636354537397396393
+ 5788280328887586583066237437427720765631198080622283
+
+Name: generate_PC/src/Wdg_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420985517411068029047092341735616443565334735661831
+ 6400939372222459287643785044400331313847439278152915
+
+Name: generate_PB/src/Wdg_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377425587838283132762854163442310641980116840614751846
+ 8655361228435732218157420201246114249111994334293773
+
+Name: generate_LT/src/Wdg_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421324498576358724546396126715471542882936387133832
+ 0396043651545286196856143589625242986851499149282229
+
+Name: generate_PC/src/Wdg_VersionCheck_Src.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773965486673615203452755488270452511227242195851571
+ 217148092275910578219311092251632493914670933176067537
+

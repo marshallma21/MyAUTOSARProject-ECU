@@ -680,7 +680,7 @@ typedef enum
     MCU_POWER_ON_RESET = McuConf_McuResetReasonConf_MCU_POWER_ON_RESET,                                      /**< @brief Power-on reset. RCM_SRS[POR]. */
     MCU_EXTERNAL_PIN_RESET = McuConf_McuResetReasonConf_MCU_EXTERNAL_PIN_RESET,                              /**< @brief External Reset Pin. RCM_SRS[PIN]. */
     MCU_WATCHDOG_RESET = McuConf_McuResetReasonConf_MCU_WATCHDOG_RESET,                                      /**< @brief Watchdog reset. RCM_SRS[Watchdog]. */
-    MCU_CMU_LOSS_OF_CLOCK_RESET = McuConf_McuResetReasonConf_MCU_CMU_LOSS_OF_CLOCK_RESET,                    /**< @brief CMU Loss-of-Clock Reset. RCM_SRS[CMU_LOC]. */
+    MCU_CMU_LOSS_OF_CLOCK_RESET = McuConf_McuResetReasonConf_MCU_CMU_LOC_RESET,                    /**< @brief CMU Loss-of-Clock Reset. RCM_SRS[CMU_LOC]. */
     MCU_LOSS_OF_LOCK_RESET = McuConf_McuResetReasonConf_MCU_LOSS_OF_LOCK_RESET,                              /**< @brief Loss-of-Lock Reset. RCM_SRS[LOL]. */
     MCU_LOSS_OF_CLOCK_RESET = McuConf_McuResetReasonConf_MCU_LOSS_OF_CLOCK_RESET,                            /**< @brief Loss-of-Clock Reset. RCM_SRS[LOC]. */
     MCU_LOW_OR_HIGH_VOLTAGE_DETECT_RESET = McuConf_McuResetReasonConf_MCU_LOW_OR_HIGH_VOLTAGE_DETECT_RESET,  /**< @brief Low-Voltage Detect Reset or High-Voltage Detect Reset. RCM_SRS[LVD]. */

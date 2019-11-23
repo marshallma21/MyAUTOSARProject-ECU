@@ -157,13 +157,11 @@ static CONST(uint16, PORT_CONST) Port_au16NoUnUsedPadsArrayDefault[PORT_MAX_UNUS
     (uint16)1,
     (uint16)2,
     (uint16)3,
-    (uint16)4,
     (uint16)5,
     (uint16)6,
     (uint16)7,
     (uint16)8,
     (uint16)9,
-    (uint16)10,
     (uint16)11,
     (uint16)12,
     (uint16)13,
@@ -191,8 +189,6 @@ static CONST(uint16, PORT_CONST) Port_au16NoUnUsedPadsArrayDefault[PORT_MAX_UNUS
     (uint16)65,
     (uint16)66,
     (uint16)67,
-    (uint16)68,
-    (uint16)69,
     (uint16)70,
     (uint16)71,
     (uint16)72,
@@ -258,16 +254,20 @@ static CONST(Port_Port_Ci_UnUsedPinConfigType, PORT_CONST) Port_UnUsedPin =
 */
 static CONST(Port_Port_Ci_PinConfigType, PORT_CONST) Port_aPinConfigDefault[PORT_MAX_CONFIGURED_PADS_U16]=
 {
+    {(Port_InternalPinIdType)68, (uint32)0x00000700, (uint8)0, (Port_PinDirectionType)1, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
+    {(Port_InternalPinIdType)69, (uint32)0x00000700, (uint8)0, (Port_PinDirectionType)1, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
+    {(Port_InternalPinIdType)10, (uint32)0x00000700, (uint8)0, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
+    {(Port_InternalPinIdType)4, (uint32)0x00000700, (uint8)0, (Port_PinDirectionType)1, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
+    {(Port_InternalPinIdType)39, (uint32)0x00000000, (uint8)2, (Port_PinDirectionType)1, (boolean)FALSE, (boolean)FALSE, (boolean)FALSE},
+    {(Port_InternalPinIdType)38, (uint32)0x00000000, (uint8)2, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)FALSE},
+    {(Port_InternalPinIdType)112, (uint32)0x00000100, (uint8)1, (Port_PinDirectionType)2, (boolean)TRUE, (boolean)TRUE, (boolean)TRUE},
     {(Port_InternalPinIdType)96, (uint32)0x00000140, (uint8)1, (Port_PinDirectionType)2, (boolean)TRUE, (boolean)FALSE, (boolean)FALSE},
     {(Port_InternalPinIdType)111, (uint32)0x00000200, (uint8)1, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
-    {(Port_InternalPinIdType)112, (uint32)0x00000100, (uint8)0, (Port_PinDirectionType)2, (boolean)TRUE, (boolean)TRUE, (boolean)TRUE},
     {(Port_InternalPinIdType)76, (uint32)0x00000100, (uint8)0, (Port_PinDirectionType)1, (boolean)TRUE, (boolean)FALSE, (boolean)FALSE},
-    {(Port_InternalPinIdType)38, (uint32)0x00000000, (uint8)2, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)FALSE},
-    {(Port_InternalPinIdType)39, (uint32)0x00000000, (uint8)2, (Port_PinDirectionType)1, (boolean)FALSE, (boolean)FALSE, (boolean)FALSE},
     {(Port_InternalPinIdType)138, (uint32)0x00000200, (uint8)0, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
-    {(Port_InternalPinIdType)78, (uint32)0x00000000, (uint8)2, (Port_PinDirectionType)0, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
+    {(Port_InternalPinIdType)133, (uint32)0x00000500, (uint8)0, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
     {(Port_InternalPinIdType)132, (uint32)0x00000500, (uint8)0, (Port_PinDirectionType)1, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE},
-    {(Port_InternalPinIdType)133, (uint32)0x00000500, (uint8)0, (Port_PinDirectionType)2, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE}
+    {(Port_InternalPinIdType)78, (uint32)0x00000000, (uint8)2, (Port_PinDirectionType)0, (boolean)FALSE, (boolean)FALSE, (boolean)TRUE}
 
 };
 

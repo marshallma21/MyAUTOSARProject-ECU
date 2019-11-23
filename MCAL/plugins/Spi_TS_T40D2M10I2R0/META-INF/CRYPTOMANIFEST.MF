@@ -1,0 +1,64 @@
+
+Name: generate_PC/Spi_RegOperations.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421820826714712965893009211241122589388151830556637
+ 8306256347559152107292511565914038099956579236581036
+
+Name: generate_PB/src/Spi_PBcfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422772989192560234335551563267967963760052246271639
+ 0297109980893346909836251250693596666383057828280225
+
+Name: generate_PC/Spi_VersionCheck_Inc.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424811211931237768145541289136491496617132640859129
+ 5279317030418870902403050330824543827504698130042199
+
+Name: config/Spi.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424138788101155130889905103252449351999262841073298
+ 5756592241195659468689922189343777831824773988728074
+
+Name: generate_PB/Spi_RegOperations.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422798172845357979319316184807403380669073168399846
+ 9493861148506849312775174833745646110810590985999433
+
+Name: generate_PC/include/Spi_Cfg.h
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377423539467344240772413994620267653734255955014020447
+ 0125242627374004464773727951112984787954415710277898
+
+Name: generate_PC/Spi_VersionCheck_Src.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421142681111793029669244637168084150848803744846875
+ 7058773621718380175820173098446310718233190107486513
+
+Name: generate_PB/Spi_VersionCheck_Src_PB.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420407484604267410539316027285019474379805731919757
+ 6985346261436242487930988467958729923018777116390898
+
+Name: generate_PC/src/Spi_Cfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420635675534671590780499200013227527630936264921090
+ 3273656393395203487341828215788433230955207851825101
+

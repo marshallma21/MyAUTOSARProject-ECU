@@ -1,0 +1,14 @@
+
+=== CanIf ===
+
+-Validating module CanIf...
+	 -Value for CanIfDispatchUserCtrlBusOffUL is invalid [ /BSWConfiguration/CanIf/CanIfDispatchCfg/@parameterValues.2 ]
+	 -Value for CanIfDispatchUserCtrlModeIndicationUL is invalid [ /BSWConfiguration/CanIf/CanIfDispatchCfg/@parameterValues.3 ]
+
+-Generating module CanIf...
+		CanIf.mk
+		CanIf_Cfg.h
+		CanIf_Cfg.c
+		CanIf_PBCfg.c
+		CanIf_PBCfg.h
+CanIf done.

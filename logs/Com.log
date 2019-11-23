@@ -1,0 +1,14 @@
+Performing generation and validation of Com...
+Generating files to: /H:/ArcticStudio-22.0.0-win32.win32.x86_64/workspace/MyAUTOSARProject-ECU/MyAUTOSARProject-ECU/config
+
+=== Com ===
+
+-Validating module Com...
+
+-Generating module Com...
+		Com.mk
+		Com_PbCfg.h
+		Com_PbCfg.c
+		Com_Cfg.h
+		Com_Cfg.c
+Com done.

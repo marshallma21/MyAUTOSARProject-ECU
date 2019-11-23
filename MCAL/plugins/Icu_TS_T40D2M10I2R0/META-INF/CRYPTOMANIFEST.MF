@@ -1,0 +1,92 @@
+
+Name: generate_PB/Icu_PluginCheck.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422286090114456733853298639863891804598527328786943
+ 4395206182528538524838000637580961686961531827533780
+
+Name: generate/include/Icu_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594738326857857388696168549235857399862151785134567785
+ 228347095705612732726366895941373022415471505948091979
+
+Name: generate_PC/Icu_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377420869725407506766941840996623360308252732076498242
+ 5529000480455915395539311673266810554768921315252425
+
+Name: config/Icu.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377423572206110159567681007385912832370196601161690899
+ 6178074359732803245001982261096106675299777585616196
+
+Name: generate_PB/src/Icu_PBcfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773964394907409987133654518519241072024486966860796
+ 717807404630794369603568637536097747487637496501212204
+
+Name: generate_PC/Icu_VersionCheck_Src.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594740119323747325986009307083645826231035039977639527
+ 570298234357933906022726675899996326513608204451451236
+
+Name: generate_PC/Icu_PluginCheck.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773972442699305570811991804494585333043493531084991
+ 993669345681286829395156515971974214311598340662725029
+
+Name: generate_PB/Icu_PluginMacros.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426729283865214616078065660176191856158562892804535
+ 2185601002692023168465166071724132761259684926769496
+
+Name: generate/include/Icu_Cfg.h
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422941695210399377707267926420842567176836382210741
+ 8542246572974890084271446706550416465215369401285953
+
+Name: generate/include/Icu_VersionCheck_Inc.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 74155374890368926000326891776440953444219753112204290656398
+ 88140284835657101599084136576467285424123774386163581795
+
+Name: generate_PC/src/Icu_Cfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421736075846371094868042690219641716598452231199630
+ 6551065010790380607208251402989631292613778718069255
+
+Name: generate_PB/Icu_VersionCheck_Src_PB.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421045035098121196716280610539761265481362574708224
+ 0532514949853009449003685177729063539593977379914153
+
+Name: generate/src/Icu_DmaNotification.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377424921159376100926667598233693118990153066489422522
+ 7441795989558825777900948838089703942251506468151824
+

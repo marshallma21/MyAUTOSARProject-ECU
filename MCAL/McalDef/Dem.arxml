@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE>
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -1273,7 +1273,7 @@
                     <ECUC-FLOAT-PARAM-DEF UUID="ECUC:ec3c831b-301e-450e-8db1-dfd7139119fb">
                       <SHORT-NAME>DemDebounceTimeFailedThreshold</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">Defines the time out duration for &quot;Event Failed&quot; qualification.</L-2>
+                        <L-2 L="EN">Defines the time out duration for "Event Failed" qualification.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1298,7 +1298,7 @@
                     <ECUC-FLOAT-PARAM-DEF UUID="ECUC:058572c3-b3e9-4bac-9329-92b4052b2ba9">
                       <SHORT-NAME>DemDebounceTimePassedThreshold</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">Defines the time out duration for &quot;Event Passed&quot; qualification.</L-2>
+                        <L-2 L="EN">Defines the time out duration for "Event Passed" qualification.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1503,7 +1503,7 @@
                     <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:6bef2c1f-2f90-49fe-9556-22677f4f7049">
                       <SHORT-NAME>DemDtrUpdateKind</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">Update conditions applied by the Dem to reports of DTR values. Only supported if a related Event is configured. If no related Event is configured, the Dem behaves as if DemDtrUpdateKind is configured to &quot;DEM_DTR_UPDATE_ALWAYS&quot;.</L-2>
+                        <L-2 L="EN">Update conditions applied by the Dem to reports of DTR values. Only supported if a related Event is configured. If no related Event is configured, the Dem behaves as if DemDtrUpdateKind is configured to "DEM_DTR_UPDATE_ALWAYS".</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1991,7 +1991,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:832368b9-669c-42ec-aef7-e4c6c1984257">
                       <SHORT-NAME>DemCallbackClearEventAllowed</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">The presence of this container indicates that the Dem has access to a &quot;ClearEventAllowed&quot; callback.</L-2>
+                        <L-2 L="EN">The presence of this container indicates that the Dem has access to a "ClearEventAllowed" callback.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2000,7 +2000,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:99f55c1f-15f2-4c47-8ae3-6146aed59f9f">
                           <SHORT-NAME>DemCallbackClearEventAllowedFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Function name of prototype &quot;ClearEventAllowed&quot;.</L-2>
+                            <L-2 L="EN">Function name of prototype "ClearEventAllowed".</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2069,7 +2069,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:009935a0-13cb-4a9d-8e13-75df86b67d9b">
                       <SHORT-NAME>DemCallbackEventDataChanged</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">The presence of this container indicates that the Dem has access to an &quot;EventDataChanged&quot; callback.</L-2>
+                        <L-2 L="EN">The presence of this container indicates that the Dem has access to an "EventDataChanged" callback.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2078,7 +2078,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:e7c0ca1f-ab5c-476a-8dde-b547d3829417">
                           <SHORT-NAME>DemCallbackEventDataChangedFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Function name of prototype &quot;EventDataChanged&quot;</L-2>
+                            <L-2 L="EN">Function name of prototype "EventDataChanged"</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2113,7 +2113,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:0bd4e86b-ea9b-45a1-835b-04f2c455586c">
                       <SHORT-NAME>DemCallbackEventStatusChanged</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to an &quot;EventStatusChanged&quot; callback, which the Dem will call to notify other components about the change in the status of an event.</L-2>
+                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to an "EventStatusChanged" callback, which the Dem will call to notify other components about the change in the status of an event.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY-INFINITE>1</UPPER-MULTIPLICITY-INFINITE>
@@ -2122,7 +2122,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:15bd9824-2e0a-40a7-b43f-97b8699d50d3">
                           <SHORT-NAME>DemCallbackEventStatusChangedFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Function name of prototype &quot;EventStatusChanged&quot;</L-2>
+                            <L-2 L="EN">Function name of prototype "EventStatusChanged"</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2157,7 +2157,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:b2aa3552-5040-493d-907d-22e59f2b3169">
                       <SHORT-NAME>DemCallbackInitMForE</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to an &quot;InitMonitorForEvent&quot; callback, which the Dem will call to initialize a monitor.</L-2>
+                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to an "InitMonitorForEvent" callback, which the Dem will call to initialize a monitor.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -2166,7 +2166,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:1457c2e7-cae7-4ee2-9518-3fbb45cddc4d">
                           <SHORT-NAME>DemCallbackInitMForEFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Function name of prototype &quot;InitMonitorForEvent&quot;.</L-2>
+                            <L-2 L="EN">Function name of prototype "InitMonitorForEvent".</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -3623,7 +3623,7 @@
                 <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:ad6128e4-e521-47f0-988f-c2f8924c94de">
                   <SHORT-NAME>DemStatusBitHandlingTestFailedSinceLastClear</SHORT-NAME>
                   <DESC>
-                    <L-2 L="EN">This configuration switch defines, whether the aging and displacement mechanism shall be applied to the &quot;TestFailedSinceLastClear&quot; status bits.</L-2>
+                    <L-2 L="EN">This configuration switch defines, whether the aging and displacement mechanism shall be applied to the "TestFailedSinceLastClear" status bits.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -3657,7 +3657,7 @@
                 <ECUC-BOOLEAN-PARAM-DEF UUID="ECUC:e5728500-68d5-44df-9489-761e66d55047">
                   <SHORT-NAME>DemStatusBitStorageTestFailed</SHORT-NAME>
                   <DESC>
-                    <L-2 L="EN">Activate/Deactivate the permanent storage of the &quot;TestFailed&quot; status bits.</L-2>
+                    <L-2 L="EN">Activate/Deactivate the permanent storage of the "TestFailed" status bits.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -3968,7 +3968,7 @@
                 <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:1b019b6f-13fc-4e71-9d72-5174e1d02847">
                   <SHORT-NAME>DemCallbackDTCStatusChanged</SHORT-NAME>
                   <DESC>
-                    <L-2 L="EN">The presence of this container indicates, that the Dem has access to a &quot;DTCStatusChanged&quot; callback, which the Dem will call to notify other components about the change in the status of a DTC.</L-2>
+                    <L-2 L="EN">The presence of this container indicates, that the Dem has access to a "DTCStatusChanged" callback, which the Dem will call to notify other components about the change in the status of a DTC.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                   <UPPER-MULTIPLICITY-INFINITE>1</UPPER-MULTIPLICITY-INFINITE>
@@ -3977,7 +3977,7 @@
                     <ECUC-FUNCTION-NAME-DEF UUID="ECUC:749ba2ba-af1d-4482-90f8-cef80e976519">
                       <SHORT-NAME>DemCallbackDTCStatusChangedFnc</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">Function name of prototype &quot;DTCStatusChanged&quot;.</L-2>
+                        <L-2 L="EN">Function name of prototype "DTCStatusChanged".</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -4055,7 +4055,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:917b9d46-e033-4b07-9e59-deb9b129e5fd">
                           <SHORT-NAME>DemDataElementReadFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">In case of DemDataElementUsePort is false, this parameter defines the prototype of the C function &quot;ReadDataElement&quot; used to get the according value.</L-2>
+                            <L-2 L="EN">In case of DemDataElementUsePort is false, this parameter defines the prototype of the C function "ReadDataElement" used to get the according value.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -5167,7 +5167,7 @@
                     <ECUC-ENUMERATION-PARAM-DEF UUID="ECUC:4d69824c-568a-4d98-90a6-b8005a53e496">
                       <SHORT-NAME>DemExtendedDataRecordUpdate</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">This extended data record is captured if the configured trigger condition in &quot;DemExtendedDataRecordTrigger&quot; is fulfilled.</L-2>
+                        <L-2 L="EN">This extended data record is captured if the configured trigger condition in "DemExtendedDataRecordTrigger" is fulfilled.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -5754,7 +5754,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:836d4e20-7900-4b0c-bfbf-d7d76e34ebf2">
                       <SHORT-NAME>DemCallbackJ1939DTCStatusChanged</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to a &quot;DTCStatusChanged&quot; callback, which the Dem will call to notify other components about the change in the status of a DTC.</L-2>
+                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to a "DTCStatusChanged" callback, which the Dem will call to notify other components about the change in the status of a DTC.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY-INFINITE>1</UPPER-MULTIPLICITY-INFINITE>
@@ -5763,7 +5763,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:d4bf1f29-c757-4810-8e27-81312c61b199">
                           <SHORT-NAME>DemCallbackDTCStatusChangedFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Function name of prototype &quot;DTCStatusChanged&quot;.</L-2>
+                            <L-2 L="EN">Function name of prototype "DTCStatusChanged".</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -5961,7 +5961,7 @@
                     <ECUC-INTEGER-PARAM-DEF UUID="ECUC:0185716e-5daa-4198-80c5-8c829239c2fa">
                       <SHORT-NAME>DemOBDCompliancy</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">Configuration value to define  the appropriate value to PID$1C &quot;OBD requirements to which vehicle or engine is certified.&quot; according to the respective standards, e.g. OBD, OBDII, JOBD etc.</L-2>
+                        <L-2 L="EN">Configuration value to define  the appropriate value to PID$1C "OBD requirements to which vehicle or engine is certified." according to the respective standards, e.g. OBD, OBDII, JOBD etc.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -6407,7 +6407,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:58b84df8-3020-4c84-90d0-a7e27869e5c5">
                       <SHORT-NAME>DemCallbackOBDDTCStatusChanged</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to a &quot;DTCStatusChanged&quot; callback, which the Dem will call to notify other components about the change in the status of a DTC.</L-2>
+                        <L-2 L="EN">The presence of this container indicates, that the Dem has access to a "DTCStatusChanged" callback, which the Dem will call to notify other components about the change in the status of a DTC.</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY-INFINITE>1</UPPER-MULTIPLICITY-INFINITE>
@@ -6416,7 +6416,7 @@
                         <ECUC-FUNCTION-NAME-DEF UUID="ECUC:a75b0356-77ef-43cb-8229-4d2b8d44ab00">
                           <SHORT-NAME>DemCallbackDTCStatusChangedFnc</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Function name of prototype &quot;DTCStatusChanged&quot;.</L-2>
+                            <L-2 L="EN">Function name of prototype "DTCStatusChanged".</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -7472,7 +7472,7 @@
                       In driver modules which can be instantiated several times on a single ECU, BSW00347 requires that the name of APIs is extended by the VendorId and a vendor specific name. 
                       This parameter is used to specify the vendor specific name. In total, the implementation specific name is generated as follows:
                       &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                      E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
+                      E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
                       This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.</L-2>
                   </DESC>
                   <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>

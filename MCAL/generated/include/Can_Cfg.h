@@ -174,6 +174,9 @@ extern "C"{
 *
 */
 
+#define CanConf_CanHardwareObject_CanHardwareObject_0  0U /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHardwareObject_CanHardwareObject_1  1U /* TRANSMIT object of Can Controller ID = 0 */
+
 
 /*
 * @brief          Symbolic names for CanObjectId
@@ -574,7 +577,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_NAME   OsCounter_0
+    #define CAN_TIMEOUT_COUNTER_NAME   COUNTER_ID_OsRteCounter
 /*
 * @brief          Wrap macro to convert TimeOut
 * @details        Define the ns time specify by 1 tick
@@ -584,7 +587,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_TICK2NS()   OS_TicksToNs_OsCounter_0(1U)
+    #define CAN_TIMEOUT_COUNTER_TICK2NS()   OS_TICKS2NS_OsRteCounter(1U)
 
 /*
 * @brief          Precompile Support.

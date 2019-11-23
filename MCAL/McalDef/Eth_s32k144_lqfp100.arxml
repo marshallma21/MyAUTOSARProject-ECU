@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:4c5e3679-f5c4-49bf-9cea-d9be54e6eec7">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -376,7 +376,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:9686c2ed-dff4-4311-9568-bdcd583b4efe">
                           <SHORT-NAME>ETH_E_ACCESS</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Controller access failed&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Controller access failed" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -417,7 +417,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:66a6db40-a8e0-43bf-a6f3-9def2e1866a0">
                           <SHORT-NAME>ETH_E_ALIGNMENT</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Alignment Error&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Alignment Error" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -458,7 +458,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:7096a2ed-4004-4e82-bd36-f4df1522377d">
                           <SHORT-NAME>ETH_E_CRC</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;CRC Failure&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "CRC Failure" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -499,7 +499,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:67f01d1a-3a72-458e-a4ab-056d12c90b7d">
                           <SHORT-NAME>ETH_E_LATECOLLISION</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Late Collisions&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Late Collisions" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -540,7 +540,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:33fd9cf3-513d-4b2e-8b31-3d07342c6612">
                           <SHORT-NAME>ETH_E_MULTIPLECOLLISION</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Multiple Collisions&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Multiple Collisions" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -581,7 +581,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:0d8c1897-e226-4438-8e91-f58e7b74a9c7">
                           <SHORT-NAME>ETH_E_OVERSIZEFRAME</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Oversized Frame&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Oversized Frame" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -622,7 +622,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:7c3c19f2-72c3-4b60-bd4c-033e0c6fc41a">
                           <SHORT-NAME>ETH_E_RX_FRAMES_LOST</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;receive frames lost&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "receive frames lost" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -663,7 +663,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:7bbd76b3-0215-4b02-8c5a-2164e44555a5">
                           <SHORT-NAME>ETH_E_SINGLECOLLISION</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Single Collisions&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Single Collisions" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -704,7 +704,7 @@
                         <ECUC-SYMBOLIC-NAME-REFERENCE-DEF UUID="ECUC:8f4b3f61-6fa7-468b-9955-8dabed4ac40f">
                           <SHORT-NAME>ETH_E_UNDERSIZEFRAME</SHORT-NAME>
                           <DESC>
-                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error &quot;Undersized Frame&quot; has occured.</L-2>
+                            <L-2 L="EN">Reference to the DemEventParameter which shall be issued when the error "Undersized Frame" has occured.</L-2>
                           </DESC>
                           <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                           <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -1379,8 +1379,6 @@
                   </VALUE-CONFIG-CLASSES>
                   <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
                   <DEFAULT-VALUE>1</DEFAULT-VALUE>
-                  <!-- @Calculated /TS_T40D2M10I2R0/Eth/EthGeneral/EthMaxCtrlsSupported: INVALID(Range: &lt;=255, &gt;=1, &lt;=num:i((text:split(&apos;&apos;,&apos; &apos;)[1])))-->
-                  <!-- @CalculatedEnd -->
                 </ECUC-INTEGER-PARAM-DEF>
                 <ECUC-BOOLEAN-PARAM-DEF UUID="ECUC:1b42b17c-01dc-4617-abf9-48d5deddc074">
                   <SHORT-NAME>EthUpdatePhysAddrFilter</SHORT-NAME>
@@ -2138,7 +2136,7 @@
                       In total, the implementation specific name is generated as follows:
                       [ModuleName]_[VendorId]_[VendorApiInfix][Api name from SWS].
                       E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a
-                      VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
+                      VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write. 
                       This parameter is mandatory for all modules with upper multiplicity &gt; 1.
                       It shall not be used for modules with upper multiplicity =1.
                     </L-2>

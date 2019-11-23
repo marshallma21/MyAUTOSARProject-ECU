@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
  *-------------------------------- Arctic Core -----------------------------*/
 
-/* Generator version: 1.0.0
+/* Generator version: 1.1.0
  * AUTOSAR version:   4.0.3
  */
 

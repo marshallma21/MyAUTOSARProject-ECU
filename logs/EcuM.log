@@ -1,0 +1,11 @@
+
+=== EcuM ===
+
+-Validating module EcuM...
+
+-Generating module EcuM...
+		EcuM.mk
+		EcuM_Cfg.h
+		EcuM_PBcfg.c
+		EcuM_GeneratedCallouts.c
+EcuM done.

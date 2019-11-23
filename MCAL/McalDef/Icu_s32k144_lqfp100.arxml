@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd http://www.w3.org/XML/1998/namespace xml.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ECUC:eda8bf5e-1cf8-43ef-8244-a62dad176cc1">
       <SHORT-NAME>TS_T40D2M10I2R0</SHORT-NAME>
@@ -202,7 +202,7 @@
                         <L-2 L="EN">
                                                 Configures the default-activation-edge which shall be used for this channel
                                                 if there was no activation-edge configured by the call of service Icu_SetActivationCondition().
-                                                In case the Measurement Mode is &quot;IcuSignalMeasurement&quot; and the properties &quot;DutyCycle&quot; or &quot;Period&quot; are set, the edge configured here is used as Default Period Start Edge.
+                                                In case the Measurement Mode is "IcuSignalMeasurement" and the properties "DutyCycle" or "Period" are set, the edge configured here is used as Default Period Start Edge.
                                                 Implementation Type: Icu_ActivationType
                                                 </L-2>
                       </DESC>
@@ -572,7 +572,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:5c3c8bb4-c94b-4fcb-9751-3e9ec437767c">
                       <SHORT-NAME>IcuSignalEdgeDetection</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is &quot;IcuSignalEdgeDetection&quot;</L-2>
+                        <L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is "IcuSignalEdgeDetection"</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -631,7 +631,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:3b475748-3a56-4d57-9f9d-c08c4ac4ccea">
                       <SHORT-NAME>IcuSignalMeasurement</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is &quot;IcuSignalMeasurement&quot;</L-2>
+                        <L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is "IcuSignalMeasurement"</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -651,7 +651,7 @@
                           <SHORT-NAME>IcuSignalMeasurementProperty</SHORT-NAME>
                           <DESC>
                             <L-2 L="EN">
-                                                    Configures the property that could be measured in case the mode is &quot;IcuSignalMeasurement&quot;.
+                                                    Configures the property that could be measured in case the mode is "IcuSignalMeasurement".
                                                     This property can not be changed during runtime.
                                                     Followings are measurement mode
                                                     
@@ -705,7 +705,7 @@
                     <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:675d6aab-39e2-415b-920b-530873913d6e">
                       <SHORT-NAME>IcuTimestampMeasurement</SHORT-NAME>
                       <DESC>
-                        <L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is &quot;IcuTimestamp&quot;</L-2>
+                        <L-2 L="EN">This container contains the configuration (parameters) in case the measurement mode is "IcuTimestamp"</L-2>
                       </DESC>
                       <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
                       <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
@@ -725,7 +725,7 @@
                           <SHORT-NAME>IcuTimestampMeasurementProperty</SHORT-NAME>
                           <DESC>
                             <L-2 L="EN">
-                                                    Configures the handling of the buffer in case the mode is &quot;Timestamp&quot;
+                                                    Configures the handling of the buffer in case the mode is "Timestamp"
                                                     Following type of buffer inplemented in current implementation.
                                                         
                                                             ICU_CIRCULAR_BUFFER.
@@ -3482,7 +3482,7 @@
                                         that the name of APIs is extended by the VendorId and a vendor specific name.
                                         This parameter is used to specify the vendor specific name. In total, the
                                         implementation specific name is generated as follows: &lt;ModuleName&gt;_&gt;VendorId&gt;_&lt;VendorApiInfix&gt;.
-                                        E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of &quot;v11r456&quot; a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
+                                        E.g.  assuming that the VendorId of the implementor is 123 and the implementer chose a VendorApiInfix of "v11r456" a api name Can_Write defined in the SWS will translate to Can_123_v11r456Write.
                                         This parameter is mandatory for all modules with upper multiplicity &gt; 1. It shall not be used for modules with upper multiplicity =1.
                                         </L-2>
                   </DESC>

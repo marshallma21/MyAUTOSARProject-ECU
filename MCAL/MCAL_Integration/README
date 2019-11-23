@@ -1,0 +1,37 @@
+/////////////////////////////////include folder\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-----------------------------------------------------------------------------------------
+Compile.h: 
+Compiler_Cfg.h needs to be included from the base folder and not from core/base/include
+-----------------------------------------------------------------------------------------
+EcuM.h:
+This file has been modified in order to include integration files. The integration file contains the defines that rename the name of the configuration structure of the MCAL like
+In the EcuM from the BSW, Mcu Configuration structure is named as McuConfigData
+in the MCAL, Mcu Configuration structure is defined as McuModuleConfiguration_0
+-----------------------------------------------------------------------------------------
+
+/////////////////////////////////////src folder\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-----------------------------------------------------------------------------------------
+Ecu.c :
+/*	Arccore: This code has been modified to match the name of typedef in MCAL
+ *	NXP deviates from the Autosar Standard. Must be reported to NXP.
+ *	Fix placed here as NXP defines this typedef in generated code.
+ */
+            /* case MCU_SW_RESET: */
+			case MCU_SOFTWARE_RESET:
+-----------------------------------------------------------------------------------------		
+EcuM_PBHeader.c			
+/* Arccore: This file has been modified in order to match the naming of the used in the MCAL*/
+In the EcuM_PBHeader.c from the BSW, Can Configuration structure is named as CanConfigData
+in the MCAL, Mcu Configuration structure is defined as CanConfigSet_0
+-----------------------------------------------------------------------------------------
+EcuM_Callout_Stubs.c
+/* Arccore: This function call is modified in order to match the API paramerter from the MCAL*/
+//Mcu_InitClock(ConfigPtr->McuConfigPtr->McuDefaultClockSettings);
+(void) Mcu_InitClock(McuClockSettingConfig_0);
+
+Modified to setup MCAL interrupts during initializaiton*/
+MCAL_IRQ_setup();
+Will try to move the call the Os initialization using configuration.
+-----------------------------------------------------------------------------------------
+
+

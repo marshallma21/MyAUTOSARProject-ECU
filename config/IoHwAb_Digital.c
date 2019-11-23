@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
  *-------------------------------- Arctic Core -----------------------------*/
 
-/* Generator version: 1.0.0
+/* Generator version: 1.1.0
  * AUTOSAR version:   4.0.3
  */
 /*lint -emacro(904,IOHWAB_VALIDATE_RETURN)*/ /*904 PC-Lint exception to MISRA 14.7 (validate DET macros)*/
@@ -22,6 +22,7 @@
 #include "IoHwAb_Internal.h"
 #include "IoHwAb_Digital.h"
 #include "IoHwAb_Dcm.h"
+#include "SchM_IoHwAb.h"
 #if defined(USE_DIO)
 #include "Dio.h"
 #else
@@ -41,13 +42,35 @@
 
 /* Signals states for I/O-control */
 /* Digital signal: Swt */
+
+#define IOHWAB_START_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"
 boolean IoHwAb_Swt_Locked = FALSE;
+#define IOHWAB_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"  /*lint !e9019 OTHER [MISRA 2012 Rule 20.1, advisory] OTHER AUTOSAR specified way of using MemMap*/
+
+#define IOHWAB_START_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"
 IoHwAb_LevelType IoHwAb_Swt_Saved = IOHWAB_LOW;
+#define IOHWAB_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"  /*lint !e9019 OTHER [MISRA 2012 Rule 20.1, advisory] OTHER AUTOSAR specified way of using MemMap*/
+
 const IoHwAb_LevelType IoHwAb_Swt_Default = IOHWAB_LOW;
 
 /* Digital signal: BlueLED */
+
+#define IOHWAB_START_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"
 boolean IoHwAb_BlueLED_Locked = FALSE;
+#define IOHWAB_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"  /*lint !e9019 OTHER [MISRA 2012 Rule 20.1, advisory] OTHER AUTOSAR specified way of using MemMap*/
+
+#define IOHWAB_START_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"
 IoHwAb_LevelType IoHwAb_BlueLED_Saved = IOHWAB_LOW;
+#define IOHWAB_STOP_SEC_VAR_INIT_UNSPECIFIED
+#include "IoHwAb_BswMemMap.h"  /*lint !e9019 OTHER [MISRA 2012 Rule 20.1, advisory] OTHER AUTOSAR specified way of using MemMap*/
+
 const IoHwAb_LevelType IoHwAb_BlueLED_Default = IOHWAB_HIGH;
 
 Std_ReturnType IoHwAb_Digital_Write_BlueLED(IoHwAb_LevelType newValue)
@@ -94,12 +117,11 @@ Std_ReturnType IoHwAb_Digital_Read_BlueLED(IoHwAb_LevelType *value, IoHwAb_Statu
 /* Exported functions */
 /* Digital signal: Swt */
 /* @req ARCIOHWAB003 */
-Std_ReturnType IoHwAb_Dcm_Swt(uint8 action, IoHwAb_LevelType* value)
+Std_ReturnType IoHwAb_Dcm_Swt(uint8 action, uint8* value)
 {
 	Std_ReturnType ret = E_OK;
 	IoHwAb_StatusType status;
-	imask_t state;
-	IoHwAb_LockSave(state);
+	SchM_Enter_IoHwAb_EA_0();
 	boolean tempLock = IoHwAb_Swt_Locked;
 	switch(action) {
 	case IOHWAB_RETURNCONTROLTOECU:
@@ -120,7 +142,7 @@ Std_ReturnType IoHwAb_Dcm_Swt(uint8 action, IoHwAb_LevelType* value)
 		break;
 	case IOHWAB_SHORTTERMADJUST:
 		{
-			IoHwAb_LevelType level = *(value);
+			IoHwAb_LevelType level = *value; 
 			if(IS_VALID_DIO_LEVEL((Dio_LevelType)level)) {
 				IoHwAb_Swt_Saved = level;
 				IoHwAb_Swt_Locked = TRUE;
@@ -135,23 +157,23 @@ Std_ReturnType IoHwAb_Dcm_Swt(uint8 action, IoHwAb_LevelType* value)
 		ret = E_NOT_OK;
 		break;
 	}
-	IoHwAb_LockRestore(state);
+	SchM_Exit_IoHwAb_EA_0();
 	return ret;
-/*lint --e{818} could be declared as pointing to const not possible due to pointer type cast */
 }
 
 
-Std_ReturnType IoHwAb_Dcm_Read_Swt(IoHwAb_LevelType* value)
+Std_ReturnType IoHwAb_Dcm_Read_Swt(uint8* value)
 {
 	Std_ReturnType ret;
 	IoHwAb_StatusType status;
-	imask_t state;
-	IoHwAb_LockSave(state);
+	IoHwAb_LevelType level;
+	SchM_Enter_IoHwAb_EA_0();
 	boolean tempLock = IoHwAb_Swt_Locked;
 	IoHwAb_Swt_Locked = FALSE;
-	ret = IoHwAb_Digital_Read_Swt(value, &status);
+	ret = IoHwAb_Digital_Read_Swt(&level, &status);
+	*value = level; 
 	IoHwAb_Swt_Locked = tempLock;
-	IoHwAb_LockRestore(state);
+	SchM_Exit_IoHwAb_EA_0();
 	return ret;
 }
 
@@ -160,11 +182,10 @@ Std_ReturnType IoHwAb_Dcm_Read_Swt(IoHwAb_LevelType* value)
 
 /* Digital signal: BlueLED */
 /* @req ARCIOHWAB003 */
-Std_ReturnType IoHwAb_Dcm_BlueLED(uint8 action, IoHwAb_LevelType* value)
+Std_ReturnType IoHwAb_Dcm_BlueLED(uint8 action, uint8* value)
 {
 	Std_ReturnType ret = E_OK;
-	imask_t state;
-	IoHwAb_LockSave(state);
+	SchM_Enter_IoHwAb_EA_0();
 	boolean tempLock = IoHwAb_BlueLED_Locked;
 	switch(action) {
 	case IOHWAB_RETURNCONTROLTOECU:
@@ -185,7 +206,7 @@ Std_ReturnType IoHwAb_Dcm_BlueLED(uint8 action, IoHwAb_LevelType* value)
 		break;
 	case IOHWAB_SHORTTERMADJUST:
 		{
-			IoHwAb_LevelType level = *(value);
+			IoHwAb_LevelType level = *value; 
 			if(IS_VALID_DIO_LEVEL((Dio_LevelType)level)) {
 				IoHwAb_BlueLED_Locked = FALSE;
 				if(E_OK != IoHwAb_Digital_Write_BlueLED(level)) {
@@ -206,23 +227,23 @@ Std_ReturnType IoHwAb_Dcm_BlueLED(uint8 action, IoHwAb_LevelType* value)
 		ret = E_NOT_OK;
 		break;
 	}
-	IoHwAb_LockRestore(state);
+	SchM_Exit_IoHwAb_EA_0();
 	return ret;
-/*lint --e{818} could be declared as pointing to const not possible due to pointer type cast */
 }
 
 
-Std_ReturnType IoHwAb_Dcm_Read_BlueLED(IoHwAb_LevelType* value)
+Std_ReturnType IoHwAb_Dcm_Read_BlueLED(uint8* value)
 {
 	Std_ReturnType ret;
 	IoHwAb_StatusType status;
-	imask_t state;
-	IoHwAb_LockSave(state);
+	IoHwAb_LevelType level;
+	SchM_Enter_IoHwAb_EA_0();
 	boolean tempLock = IoHwAb_BlueLED_Locked;
 	IoHwAb_BlueLED_Locked = FALSE;
-	ret = IoHwAb_Digital_Read_BlueLED(value, &status);
+	ret = IoHwAb_Digital_Read_BlueLED(&level, &status);
+	*value = level; 
 	IoHwAb_BlueLED_Locked = tempLock;
-	IoHwAb_LockRestore(state);
+	SchM_Exit_IoHwAb_EA_0();
 	return ret;
 }
 
