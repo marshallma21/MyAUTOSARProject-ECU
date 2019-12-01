@@ -93,9 +93,9 @@ extern "C" {
 /*==================================================================================================
 *                                       DEFINES AND MACROS
 ==================================================================================================*/
-    #define OsCounter_0   0
-    #define OS_TicksToNs_OsCounter_0(x) 10000U 
-    #define OS_TICKS2US_OsCounter_0(x) 10U 
+    #define OsRteCounter   0
+    #define OS_TicksToNs_OsRteCounter(x) 10000U 
+    #define OS_TICKS2US_OsRteCounter(x) 10U 
 
 
 /*==================================================================================================

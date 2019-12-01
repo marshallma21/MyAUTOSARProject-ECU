@@ -202,7 +202,7 @@ extern "C"{
 If no extended identifiers are used then the IDs and MASKs can be stored in uint16 rather than uint32.
 *
 */
-#define CAN_EXTENDEDID (STD_ON)
+#define CAN_EXTENDEDID (STD_OFF)
 
 #define CAN_SET_BAUDRATE_API (STD_OFF)
 
@@ -498,7 +498,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Enables/Disables the Error Controller Notification. Used for INTERRUPTs mapping in Can_Irq.c file.
 *
 */
-#define CAN_ERROR_NOTIFICATION_ENABLE (STD_ON)
+#define CAN_ERROR_NOTIFICATION_ENABLE (STD_OFF)
 
 /*
 * @brief          Index into the configuration structures.
@@ -529,7 +529,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Enables/Disables the Error Controller Notification. Used for INTERRUPTs mapping in Can_Irq.c file.
 *
 */
-#define CAN_A_ERROR_NOTIFICATION_ENABLE (STD_ON)
+#define CAN_A_ERROR_NOTIFICATION_ENABLE (STD_OFF)
 
 
 /*
@@ -613,10 +613,10 @@ The specification only allows up to 256 can hardware objects. The driver support
 *                 In this case multiple Can_MainFunction_Read() or Can_MainFunction_Write() will be provided by the CAN Driver module..
 *
 */
-#define CAN_MAINFUNCTION_PERIOD         (0.001F)
-#define CAN_MAINFUNCTION_PERIOD_READ    (0.001F)
+#define CAN_MAINFUNCTION_PERIOD         (0.01F)
+#define CAN_MAINFUNCTION_PERIOD_READ    (0.01F)
 #define CAN_MAINFUNCTION_MULTIPLE_READ  (STD_OFF)
-#define CAN_MAINFUNCTION_PERIOD_WRITE   (0.001F)
+#define CAN_MAINFUNCTION_PERIOD_WRITE   (0.01F)
 #define CAN_MAINFUNCTION_MULTIPLE_WRITE (STD_OFF)
 
 /*

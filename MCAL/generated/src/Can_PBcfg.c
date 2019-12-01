@@ -265,7 +265,7 @@ static CONST(Can_ControllerBaudrateConfigType, CAN_CONST) ControllerBaudrateCfgS
 {
     /*
     =================================================
-    Clock Size = 8000000.0 Hz  - Clock from MCU.
+    Clock Size = 8000000.0 Hz - Clock from external OSC.
 
     Clock Prescaler = 1 (1..256)
 
@@ -287,7 +287,7 @@ static CONST(Can_ControllerBaudrateConfigType, CAN_CONST) ControllerBaudrateCfgS
                     ((uint32)3 << FLEXCAN_CTRL_RJW_SHIFT_U8) |     /* CTRL[RJW] - Resynchronization Jump Width */
                     ((uint32)3 << FLEXCAN_CTRL_PSEG1_SHIFT_U8) |      /* CTRL[PSEG1] - Segment 1 */
                     ((uint32)3 << FLEXCAN_CTRL_PSEG2_SHIFT_U8) |    /* CTRL[PSEG2] - Segment 2 */
-                    ((uint32)1 << FLEXCAN_CTRL_CLKSRC_SHIFT_U8) |
+                    ((uint32)0 << FLEXCAN_CTRL_CLKSRC_SHIFT_U8) |
                     6U   /* CTRL[PROPSEG] - Propagation segment */
                 ),
         (uint8)12U, /* CTRL2[TASD] Tx Arbitration Start Delay */
