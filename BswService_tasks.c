@@ -4,6 +4,8 @@
 #include "IoHwAb.h"
 #include "Com.h"
 #include "EcuM.h"
+#include "Can.h"
+#include "CanIf.h"
 
 #define BSW_SERVICE_TASK_PERIOD	0.005
 
@@ -22,10 +24,20 @@
 
 static uint32_t service = 0u;
 
-void WDOG_disable (void){
+void WDOG_disable( void ) {
   WDOG->CNT=0xD928C520; 	/* Unlock watchdog */
   WDOG->TOVAL=0x0000FFFF;	/* Maximum timeout value */
   WDOG->CS = 0x00002100;    /* Disable watchdog */
+}
+
+void Com_EnableIpduGroup( void ) {
+	Com_IpduGroupVector ipduGroupVector;
+	ipduGroupVector[0] = 3;
+	Com_IpduGroupControl(ipduGroupVector, FALSE);
+
+	CanIf_SetControllerMode(0, CANIF_CS_STARTED);
+
+	CanIf_SetPduMode(0, CANIF_SET_ONLINE);
 }
 
 void OsIdle( void ) {
@@ -35,9 +47,11 @@ void OsIdle( void ) {
 }
 
 void OsStartupTask( void ) {
-	EcuM_StartupTwo();
 	WDOG_disable();
-	//(void)TerminateTask();
+	EcuM_StartupTwo();
+	Com_EnableIpduGroup();
+	
+	(void)TerminateTask();
 }
 
 void OsBswServiceTask( void ) {
@@ -51,14 +65,21 @@ void OsBswServiceTask( void ) {
         Com_MainFunctionTx();
     }
 
+
+	if (0u == (service % CAN_MAIN_PERIOD)) {
+        Can_MainFunction_Mode();
+        Can_MainFunction_Write();
+        Can_MainFunction_Read();
+    }
+	
 	if (0u == (service % IOHWAB_MAIN_PERIOD)) {
 		IoHwAb_MainFunction();
 	}
 
 	service++;
 
-	if( !((service % IOHWAB_MAIN_PERIOD)==0) )	{
-		service = 0u;
+	if( service > 100u )	{
+		service = 1u;
 	}
 
 	(void)TerminateTask();
