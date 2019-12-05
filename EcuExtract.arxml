@@ -181,7 +181,7 @@
             </APPLICATION-PRIMITIVE-DATA-TYPE>
             <IMPLEMENTATION-DATA-TYPE UUID="48631915-9857-3767-b26f-c1cfe56d0241">
               <SHORT-NAME>SwitchStatusImpl</SHORT-NAME>
-              <CATEGORY>BOOLEAN</CATEGORY>
+              <CATEGORY>VALUE</CATEGORY>
               <SW-DATA-DEF-PROPS>
                 <SW-DATA-DEF-PROPS-VARIANTS>
                   <SW-DATA-DEF-PROPS-CONDITIONAL>
@@ -192,7 +192,7 @@
             </IMPLEMENTATION-DATA-TYPE>
             <APPLICATION-PRIMITIVE-DATA-TYPE UUID="9312c76b-9d24-3d77-8071-69b0eb5130c0">
               <SHORT-NAME>SwitchStatus</SHORT-NAME>
-              <CATEGORY>BOOLEAN</CATEGORY>
+              <CATEGORY>VALUE</CATEGORY>
               <SW-DATA-DEF-PROPS>
                 <SW-DATA-DEF-PROPS-VARIANTS>
                   <SW-DATA-DEF-PROPS-CONDITIONAL />
@@ -201,7 +201,7 @@
             </APPLICATION-PRIMITIVE-DATA-TYPE>
             <IMPLEMENTATION-DATA-TYPE UUID="eafb6d44-a569-3ca0-9b40-28254e0f8fcc">
               <SHORT-NAME>LEDStatusImpl</SHORT-NAME>
-              <CATEGORY>BOOLEAN</CATEGORY>
+              <CATEGORY>VALUE</CATEGORY>
               <SW-DATA-DEF-PROPS>
                 <SW-DATA-DEF-PROPS-VARIANTS>
                   <SW-DATA-DEF-PROPS-CONDITIONAL>
@@ -212,7 +212,7 @@
             </IMPLEMENTATION-DATA-TYPE>
             <APPLICATION-PRIMITIVE-DATA-TYPE UUID="621a08b7-4522-30e3-b684-41aa4d66285f">
               <SHORT-NAME>LEDStatus</SHORT-NAME>
-              <CATEGORY>BOOLEAN</CATEGORY>
+              <CATEGORY>VALUE</CATEGORY>
               <SW-DATA-DEF-PROPS>
                 <SW-DATA-DEF-PROPS-VARIANTS>
                   <SW-DATA-DEF-PROPS-CONDITIONAL />
@@ -221,7 +221,7 @@
             </APPLICATION-PRIMITIVE-DATA-TYPE>
             <IMPLEMENTATION-DATA-TYPE UUID="7b635eb0-2149-385c-bbef-771263d9445c">
               <SHORT-NAME>IntensityStatusImpl</SHORT-NAME>
-              <CATEGORY>BOOLEAN</CATEGORY>
+              <CATEGORY>VALUE</CATEGORY>
               <SW-DATA-DEF-PROPS>
                 <SW-DATA-DEF-PROPS-VARIANTS>
                   <SW-DATA-DEF-PROPS-CONDITIONAL>
@@ -232,7 +232,7 @@
             </IMPLEMENTATION-DATA-TYPE>
             <APPLICATION-PRIMITIVE-DATA-TYPE UUID="a3a03868-12f9-3374-a522-df8bfb65d949">
               <SHORT-NAME>IntensityStatus</SHORT-NAME>
-              <CATEGORY>BOOLEAN</CATEGORY>
+              <CATEGORY>VALUE</CATEGORY>
               <SW-DATA-DEF-PROPS>
                 <SW-DATA-DEF-PROPS-VARIANTS>
                   <SW-DATA-DEF-PROPS-CONDITIONAL />
@@ -438,7 +438,7 @@
                   <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ApplicationLayer/CompositionPackage/RootComposition</SOFTWARE-COMPOSITION-TREF>
                 </ROOT-SW-COMPOSITION-PROTOTYPE>
               </ROOT-SOFTWARE-COMPOSITIONS>
-              <SYSTEM-VERSION>1</SYSTEM-VERSION>
+              <SYSTEM-VERSION>1.0.0</SYSTEM-VERSION>
             </SYSTEM>
           </ELEMENTS>
         </AR-PACKAGE>
