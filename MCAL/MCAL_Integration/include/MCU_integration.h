@@ -20,6 +20,6 @@
 /*Configuration name used do not match*/
 #define McuConfigData   (&McuModuleConfiguration)
 
-uint32 Mcu_Arc_GetSystemClock(void);
+uint32 Mcu_Arc_GetSystemClock();
 
 #endif /* MCU_INTEGRATION_H_ */

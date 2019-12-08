@@ -50,5 +50,6 @@
 #endif
 
 void MCAL_IRQ_setup( void );
+uint32 Mcu_Arc_GetSystemClock(void);
 
 #endif /* INTEGRATION_H_ */

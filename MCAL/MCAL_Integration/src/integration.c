@@ -66,3 +66,5 @@ uint32 Mcu_Arc_GetSystemClock(void) {
 
     return (uint32)80000000;
 }
+
+

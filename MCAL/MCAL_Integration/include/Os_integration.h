@@ -10,6 +10,6 @@
 
 #include "Os.h"
 
-#define OsCounter_0 COUNTER_ID_OsCounter_0
+#define OsRteCounter COUNTER_ID_OsRteCounter
 
 #endif /* OS_INTEGRATION_H_ */

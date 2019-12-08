@@ -26,6 +26,7 @@ include ../MCAL/mcal.mod.mk
 
 VPATH += ../MCAL/MCAL_Integration/src
 inc-y += ../MCAL/MCAL_Integration/include
+obj-y += integration.o
 
 include $(ROOTDIR)/scripts/project_defaults.mk
 #include $(ROOTDIR)/scripts/rules.mk

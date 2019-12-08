@@ -310,6 +310,7 @@ void EcuM_AL_DriverInitOne(const EcuM_ConfigType *ConfigPtr)
 
     /* Set up default clock (Mcu_InitClock requires initRun==1) */
     /* Ignoring return value */
+    //(void) Mcu_InitClock(ConfigPtr->McuConfigPtr->McuDefaultClockSettings);
     (void) Mcu_InitClock(McuClockSettingConfig_0);
 
     // Wait for PLL to sync.
@@ -321,9 +322,6 @@ void EcuM_AL_DriverInitOne(const EcuM_ConfigType *ConfigPtr)
     (void) Mcu_DistributePllClock();
 #endif
 
-    /* Arccore: Modified to setup MCAL interrupts */
-    MCAL_IRQ_setup();
-    
 #if defined(USE_DEM)
     // Preinitialize DEM
     NO_DRIVER(Dem_PreInit(ConfigPtr->DemConfigPtr));
@@ -336,9 +334,9 @@ void EcuM_AL_DriverInitOne(const EcuM_ConfigType *ConfigPtr)
 
 #if defined(USE_DIO)
 
-#if(DIO_AR_RELEASE_MAJOR_VERSION == 4) && (DIO_AR_RELEASE_MINOR_VERSION == 0)
+#if(DIO_AR_RELEASE_MAJOR_VERSION != 4) || (DIO_AR_RELEASE_MINOR_VERSION != 3)
     // Setup Dio
-    Dio_Init(ConfigPtr->DioConfigPtr);
+    //Dio_Init(ConfigPtr->DioConfigPtr);
 #endif
 
 #endif

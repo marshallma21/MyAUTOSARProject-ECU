@@ -11,6 +11,7 @@
 #include "Pwm.h"
 
 #define PwmConfig PwmChannelConfigSet
-#define PwmConf_PwmChannel_PwmChannel_RedLed	PwmConf_PwmChannelConfigSet_PwmChannel_RedLed
+#define PwmConf_PwmChannel_PwmChannel_RedLed	\
+		PwmConf_PwmChannelConfigSet_PwmChannel_RedLed
 
 #endif /* PWM_INTEGRATION_H_ */

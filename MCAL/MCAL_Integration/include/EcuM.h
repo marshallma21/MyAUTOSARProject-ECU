@@ -12,6 +12,9 @@
  * <http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
  *-------------------------------- Arctic Core -----------------------------*/
 
+/** @reqSettings DEFAULT_SPECIFICATION_REVISION=4.3.0 */
+/** @fileSafetyClassification ASIL **/ /* Same EcuM.h always used  */
+
 /** @addtogroup EcuM ECU State Manager
  *  @{ */
 
@@ -65,13 +68,16 @@
 /* @req SWS_EcuM_00991 */ /*The implementation of the ECU State Manager Fixed module shall provide one file EcuM.h containing fix type declarations, forward declaration to generated types, and function prototypes.*/
 /* @req SWS_EcuM_00676 */ /*It shall only be necessary to include EcuM.h to use all services of the ECU State Manager.*/
 /* @req SWS_EcuM_04036 */
+/* @req ARC_SWS_ECUM_00011 The ECUM module shall be implemented as a compiler and hardware independent module */
 
 #ifndef ECUM_H_
 #define ECUM_H_
 
+/* @req SWS_BSW_00201 */ /*Development errors should be of type uint8 */
 #define ECUM_MODULE_ID			10u
 #define ECUM_VENDOR_ID			60u
 
+/* @req SWS_BSW_00059 Published information */
 #define ECUM_SW_MAJOR_VERSION	3u
 #define ECUM_SW_MINOR_VERSION	1u
 #define ECUM_SW_PATCH_VERSION	0u
@@ -80,6 +86,10 @@
 #define ECUM_AR_MINOR_VERSION	3u
 #define ECUM_AR_PATCH_VERSION	0u
 
+#define ECUM_CALLOUT_SW_MAJOR_VERSION   3u
+#define ECUM_CALLOUT_SW_MINOR_VERSION   0u
+#define ECUM_CALLOUT_SW_PATCH_VERSION   0u
+
 #include "Os.h"
 // ECUM_ARC_SAFETY_PLATFORM is based on the configuration enabled in makefile
 #if defined(CFG_SAFETY_PLATFORM)
@@ -87,7 +97,7 @@
 #else
 #define ECUM_ARC_SAFETY_PLATFORM STD_OFF
 #endif
-
+/* @req SWS_BSW_00020 */
 /* @req SWS_EcuM_02993 *//* @req SWS_EcuM_02993 */
 #include "EcuM_Cfg.h"
 #include "EcuM_Types.h"
@@ -105,13 +115,10 @@
 #include "NvM.h"
 #endif
 
-/* Arccore: This file has been modified in order to include integration files  */
-#if defined(CFG_MCAL_EXTERNAL)
 #include "integration.h"
-#endif
-
 
 /** @name Error Codes */
+/* @req SWS_BSW_00073 */
 /* @req SWS_EcuM_02982 */ /* @req SWS_EcuM_02984 */ /* @req SWS_EcuM_04032 */
 #define ECUM_E_UNINIT (0x10u)
 #define ECUM_E_SERVICE_DISABLED (0x11u)
@@ -209,7 +216,6 @@ Std_ReturnType EcuM_SelectShutdownTarget(EcuM_StateType shutdownTarget, uint8 sl
 
 /* @req SWS_EcuM_02824 */
 Std_ReturnType EcuM_GetShutdownTarget(EcuM_StateType* shutdownTarget, uint8* sleepMode);
-
 Std_ReturnType EcuM_GetLastShutdownTarget(EcuM_StateType* shutdownTarget, uint8* sleepMode);
 
 Std_ReturnType EcuM_SelectBootTarget(EcuM_BootTargetType target);
@@ -254,13 +260,6 @@ Std_ReturnType EcuM_SelectShutdownCause(EcuM_ShutdownCauseType target);
 
 /* @req SWS_EcuM_04051 */
 Std_ReturnType EcuM_GetShutdownCause(EcuM_ShutdownCauseType *shutdownCause);
-#endif
-
-#if defined(USE_ECUM_FIXED)
-/* @req SWS_EcuM_00839 */
-#if defined(USE_NVM)
-void EcuM_CB_NfyNvMJobEnd(uint8 ServiceId, NvM_RequestResultType JobResult);
-#endif
 #endif
 
 #if (ECUM_ARC_SAFETY_PLATFORM == STD_ON)

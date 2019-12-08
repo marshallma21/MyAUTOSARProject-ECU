@@ -13,6 +13,8 @@
  *-------------------------------- Arctic Core -----------------------------*/
 
 
+/** @reqSettings DEFAULT_SPECIFICATION_REVISION=4.3.0 */
+
 /* The post build area has the following structure.
  *
  * PostbuildConfig_Type - contains general data about the post
@@ -30,36 +32,37 @@
  * FrTp (N/A)
  *
  */
-/* Arccore: This file has been modified in order to match the naming used in the MCAL*/
-#include "integration.h"
 
+#include "integration.h"
 #include "EcuM_PBTypes.h"
 #include "PreCompiledDataHash.h"
 #include "MemMap.h"
 
 #if defined(USE_CAN)
-#include "Can.h"
+extern const Can_ConfigType CanConfigData;
 #endif
 
 #if defined(USE_CANTP)
-//#include "CanTp.h"
 extern const CanTp_ConfigType CanTpConfig;
 #endif
 
 #if defined(USE_PDUR)
-//#include "PduR.h"
 extern const PduR_PBConfigType PduR_Config;
 #endif
 
 #if defined(USE_CANIF)
-//#include "CanIf.h"
 extern const CanIf_ConfigType CanIf_Config;
 #endif
 
 #if defined(USE_COM)
-//#include "Com.h"
 extern const Com_ConfigType ComConfiguration;
 #endif
+
+#if defined(USE_FIM)
+#include "FiM.h"
+#endif
+
+/*lint -save -e785 MISRA:FALSE_POSITIVE:Partial array initialization is allowed because this can be rewritten in integration:[MISRA 2012 Rule 9.3, required] */
 
 SECTION_POSTBUILD_HEADER const PostbuildConfigType Postbuild_Config = {
     .startPattern = 0x5A5A5A5A,
@@ -90,4 +93,11 @@ SECTION_POSTBUILD_HEADER const PostbuildConfigType Postbuild_Config = {
 #if defined(USE_PDUR)
     .PduRConfigPtr = &PduR_Config,
 #endif
+#if defined(USE_CANTRCV)
+	.CanTrcvConfigPtr = &CanTrcv_Config,
+#endif
+#if defined(USE_FIM) && (FIM_POSTBUILD_MODE == STD_ON)
+    .FiMConfigPtr = &FiM_Config,
+#endif
 };
+/*lint -restore */

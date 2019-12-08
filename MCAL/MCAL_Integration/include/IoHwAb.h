@@ -59,8 +59,7 @@
 #endif
 #endif
 
-/* Arccore: IoHwAb_Pwm.c:56:26: error: 'PwmConf_PwmChannel_PwmChannel_0' undeclared (first use in this function) */
-#include "integration.h"
+#include "Pwm_integration.h"
 
 #define IOHWAB_UNLOCKED		0u
 #define IOHWAB_LOCKED		1u
