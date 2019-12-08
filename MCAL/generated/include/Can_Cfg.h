@@ -18,7 +18,7 @@
 *   Autosar Revision     : ASR_REL_4_2_REV_0002
 *   Autosar Conf.Variant :
 *   SW Version           : 1.0.2
-*   Build Version        : S32K14xS32K14X_MCAL_1_0_2_RTM_ASR_REL_4_2_REV_0002_20190426
+*   Build Version        : S32K14xS32K14X_MCAL_1_0_2_RTM_HF1_ASR_REL_4_2_REV_0002_20190520
 *
 *   (c) Copyright 2006-2016 Freescale Semiconductor, Inc. 
 *       Copyright 2017-2019 NXP
@@ -173,9 +173,6 @@ extern "C"{
 (PR-MCAL-2944)Numeric ID's in configuration and definition of symbolic names in Can_Cfg.h file.
 *
 */
-
-#define CanConf_CanHardwareObject_CanHardwareObject_0  0U /* RECEIVE object of Can Controller ID = 0 */
-#define CanConf_CanHardwareObject_CanHardwareObject_1  1U /* TRANSMIT object of Can Controller ID = 0 */
 
 
 /*
@@ -577,7 +574,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_NAME   COUNTER_ID_OsRteCounter
+    #define CAN_TIMEOUT_COUNTER_NAME   OsRteCounter
 /*
 * @brief          Wrap macro to convert TimeOut
 * @details        Define the ns time specify by 1 tick
