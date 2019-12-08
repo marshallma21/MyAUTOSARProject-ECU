@@ -162,7 +162,7 @@ extern "C"{
         * @violates @ref CompilerDefinition_h_REF_2 The names of standard library
         * macros, objects and functions shall not be reused.
         */
-        //#define _LINARO_C_S32K14x_
+        #define _LINARO_C_S32K14x_
  #endif      
 #ifdef __CC_ARM 
         /**

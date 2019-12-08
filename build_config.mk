@@ -35,10 +35,7 @@ MOD_USE += ARC
 #MOD_USE += SPI
 
 #Selecting Compiler being used for the NXP MCAL
-def-y +=_LINARO_C_S32K14x_
-
-#External MCAL Mode in the NXP MCAL
-CFG += MCAL_EXTERNAL
 CFG += CANIF_ASR_4_3_1
 
 def-y += CPU_S32K144HFT0VLLT
+def-y += CFG_MCAL_EXTERNAL
