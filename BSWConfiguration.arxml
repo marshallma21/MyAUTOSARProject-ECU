@@ -1686,7 +1686,7 @@
                           </ANNOTATION-TEXT>
                         </ANNOTATION>
                       </ANNOTATIONS>
-                      <VALUE>LITTLE_ENDIAN</VALUE>
+                      <VALUE>BIG_ENDIAN</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/ArcCore/EcucDefs/Generic/Com/ComConfig/ComSignal/ComSignalType</DEFINITION-REF>
@@ -1886,7 +1886,7 @@
                           </ANNOTATION-TEXT>
                         </ANNOTATION>
                       </ANNOTATIONS>
-                      <VALUE>LITTLE_ENDIAN</VALUE>
+                      <VALUE>BIG_ENDIAN</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/ArcCore/EcucDefs/Generic/Com/ComConfig/ComSignal/ComSignalType</DEFINITION-REF>
@@ -1991,7 +1991,7 @@
                           </ANNOTATION-TEXT>
                         </ANNOTATION>
                       </ANNOTATIONS>
-                      <VALUE>LITTLE_ENDIAN</VALUE>
+                      <VALUE>BIG_ENDIAN</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/ArcCore/EcucDefs/Generic/Com/ComConfig/ComSignal/ComSignalType</DEFINITION-REF>
@@ -8898,7 +8898,7 @@
                           </ANNOTATION-TEXT>
                         </ANNOTATION>
                       </ANNOTATIONS>
-                      <VALUE>100</VALUE>
+                      <VALUE>10</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
