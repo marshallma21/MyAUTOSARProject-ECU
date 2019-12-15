@@ -59,9 +59,11 @@ static IoHwAb_VoltType IoHwAb_Scaling_ArcIoHwAbScaling(Adc_ValueGroupType adcVal
      */
 
     scaledValue = adcValue;
-    scaledValue *= 5000;
-    scaledValue /= adcMaxValue;
-    scaledValue += 0;
+
+    // Remove the scaling, because I want to use raw ADC value.
+    //scaledValue *= 5000;
+    //scaledValue /= adcMaxValue;
+    //scaledValue += 0;
 
     return scaledValue;
 }
