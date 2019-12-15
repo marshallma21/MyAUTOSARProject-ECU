@@ -248,7 +248,7 @@ static CONST(Adc_Adc12bsarv2_HwUnitConfigurationType, ADC_CONST) Adc_HwUnitCfg[]
         ADC12BSARV2_CFG1_CLOCK_DIV1_U32 |
 
         /* Conversion Mode Selection */
-        ADC12BSARV2_CFG1_12_BITS_RESOLUTION_U32 |
+        ADC12BSARV2_CFG1_8_BITS_RESOLUTION_U32 |
         /* Input Clock Select */
         ADC12BSARV2_CFG1_ALTCLK1_U32,
 #if (STD_ON == ADC_SET_ADC_CONV_TIME_ONCE)
@@ -288,9 +288,9 @@ static CONST(Adc_Adc12bsarv2_HwUnitConfigurationType, ADC_CONST) Adc_HwUnitCfg[]
         /** ===== OFS register ===== */
         0U,
         /** ===== Bitmask for converted data ===== */
-        ADC12BSARV2_RESULT_DATA_MASK_12_BIT_U32,
+        ADC12BSARV2_RESULT_DATA_MASK_8_BIT_U32,
         /** ===== Adc bit resolution ===== */
-        ADC_BITS_RESOLUTION_12_U8,
+        ADC_BITS_RESOLUTION_8_U8,
         /** ===== PDB Clock Settings ===== */
         ((0UL << 12U) | 
         (0UL << 2U)) |         0x0UL
@@ -391,9 +391,9 @@ static CONST(Adc_GroupConfigurationType, ADC_CONST) Adc_GroupsCfg[] =
         /**< @brief Hardware unit configured */
         (Adc_HwUnitType)0,
         /**< @brief Access mode */
-        ADC_ACCESS_MODE_SINGLE,
+        ADC_ACCESS_MODE_STREAMING,
         /**< @brief Conversion mode */
-        ADC_CONV_MODE_ONESHOT,
+        ADC_CONV_MODE_CONTINUOUS,
         /**< @brief Conversion type */
         ADC_CONV_TYPE_NORMAL,
 #if (ADC_PRIORITY_IMPLEMENTATION != ADC_PRIORITY_NONE)

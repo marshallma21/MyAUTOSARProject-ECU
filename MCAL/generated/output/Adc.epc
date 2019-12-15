@@ -33,7 +33,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I2R0/Adc/AdcConfigSet/AdcHwUnit/AdcResolution</DEFINITION-REF>
-                      <VALUE>BITS_12</VALUE>
+                      <VALUE>BITS_8</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I2R0/Adc/AdcConfigSet/AdcHwUnit/AdcTransferType</DEFINITION-REF>
@@ -81,11 +81,11 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I2R0/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupAccessMode</DEFINITION-REF>
-                          <VALUE>ADC_ACCESS_MODE_SINGLE</VALUE>
+                          <VALUE>ADC_ACCESS_MODE_STREAMING</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I2R0/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupConversionMode</DEFINITION-REF>
-                          <VALUE>ADC_CONV_MODE_ONESHOT</VALUE>
+                          <VALUE>ADC_CONV_MODE_CONTINUOUS</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I2R0/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupConversionType</DEFINITION-REF>
