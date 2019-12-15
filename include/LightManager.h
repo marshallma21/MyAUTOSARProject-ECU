@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LightManager'.
  *
- * Model version                  : 1.3
+ * Model version                  : 1.7
  * Simulink Coder version         : 9.1 (R2019a) 23-Nov-2018
- * C/C++ source code generated on : Sat Dec  7 21:11:20 2019
+ * C/C++ source code generated on : Sun Dec 15 14:07:05 2019
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: NXP->Cortex-M4
@@ -24,7 +24,6 @@
 #ifndef LightManager_COMMON_INCLUDES_
 # define LightManager_COMMON_INCLUDES_
 #include "rtwtypes.h"
-#include "zero_crossing_types.h"
 #include "Rte_LightManager.h"
 #endif                                 /* LightManager_COMMON_INCLUDES_ */
 
@@ -35,27 +34,11 @@ typedef struct tag_DW {
   float64 Add1;                        /* '<S4>/Add1' */
   float64 IntStep;                     /* '<Root>/Data Store Memory4' */
   float64 IntSts;                      /* '<Root>/Data Store Memory6' */
-  sint32 chartAbsoluteTimeCounter;     /* '<S7>/Debounce' */
-  sint32 durationLastReferenceTick_1;  /* '<S7>/Debounce' */
-  sint32 durationLastReferenceTick_1_p;/* '<S7>/Debounce' */
-  uint16 counter_period;               /* '<S6>/Data Store Memory' */
   uint8 IntReq;                        /* '<Root>/Data Store Memory' */
   uint8 PotValue;                      /* '<Root>/Data Store Memory2' */
   uint8 IntStepCounter;                /* '<Root>/Data Store Memory5' */
-  uint8 is_active_c3_LightManager;     /* '<S7>/Debounce' */
-  uint8 is_c3_LightManager;            /* '<S7>/Debounce' */
-  boolean LEDToggleEnable;             /* '<Root>/Data Store Memory1' */
   boolean LEDSts;                      /* '<Root>/Data Store Memory3' */
-  boolean condWasTrueAtLastTimeStep_1; /* '<S7>/Debounce' */
-  boolean condWasTrueAtLastTimeStep_1_p;/* '<S7>/Debounce' */
 } DW;
-
-/* Zero-crossing (trigger) state */
-typedef struct tag_PrevZCX {
-  ZCSigState UpdateToggleEnable_Trig_ZCE;/* '<S7>/UpdateToggleEnable' */
-  ZCSigState EnabledandTriggeredSubsystem_Tr;
-                                    /* '<S6>/Enabled and Triggered Subsystem' */
-} PrevZCX;
 
 /* Block signals and states (default storage) */
 extern DW rtDW;
@@ -64,7 +47,9 @@ extern DW rtDW;
  * These blocks were eliminated from the model due to optimizations:
  *
  * Block '<S2>/Data Type Conversion' : Eliminate redundant data type conversion
+ * Block '<S3>/Data Type Conversion' : Eliminate redundant data type conversion
  * Block '<S3>/Data Type Conversion1' : Eliminate redundant data type conversion
+ * Block '<S6>/Data Type Conversion' : Eliminate redundant data type conversion
  */
 
 /*-
@@ -87,11 +72,7 @@ extern DW rtDW;
  * '<S3>'   : 'LightManager/TimeToggleLED_sys'
  * '<S4>'   : 'LightManager/RedLiDimming_sys/If Action Subsystem'
  * '<S5>'   : 'LightManager/RedLiDimming_sys/If Action Subsystem1'
- * '<S6>'   : 'LightManager/TimeToggleLED_sys/ToggleLED'
- * '<S7>'   : 'LightManager/TimeToggleLED_sys/UpdateLEDToggleEnable'
- * '<S8>'   : 'LightManager/TimeToggleLED_sys/ToggleLED/Enabled and Triggered Subsystem'
- * '<S9>'   : 'LightManager/TimeToggleLED_sys/UpdateLEDToggleEnable/Debounce'
- * '<S10>'  : 'LightManager/TimeToggleLED_sys/UpdateLEDToggleEnable/UpdateToggleEnable'
+ * '<S6>'   : 'LightManager/TimeToggleLED_sys/Update_LEDSts'
  */
 #endif                                 /* RTW_HEADER_LightManager_h_ */
 

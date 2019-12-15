@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LightManager'.
  *
- * Model version                  : 1.3
+ * Model version                  : 1.7
  * Simulink Coder version         : 9.1 (R2019a) 23-Nov-2018
- * C/C++ source code generated on : Sat Dec  7 21:11:20 2019
+ * C/C++ source code generated on : Sun Dec 15 14:07:05 2019
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: NXP->Cortex-M4
