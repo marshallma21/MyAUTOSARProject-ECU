@@ -8,6 +8,10 @@
 #include "CanIf.h"
 
 extern void LightManager_Init(void);
+extern void LEDActuator_Init(void);
+extern void PotSensor_Init(void);
+extern void SwtSensor_Init(void);
+extern void IntController_Init(void);
 
 #define BSW_SERVICE_TASK_PERIOD	0.005
 
